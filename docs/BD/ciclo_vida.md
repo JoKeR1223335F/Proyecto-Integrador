@@ -13,7 +13,7 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 | N.º | Entidad Java | Tabla MySQL | Estado | Responsable |
 |---:|---|---|---|---|
 | 1 | `Rol` | `rol` | **Completado** | Cristofer |
-| 2 | `RolProceso` | `rol_proceso` | Pendiente | Por asignar |
+| 2 | `RolProceso` | `rol_proceso` | En Proceso | Cristofer |
 | 3 | `TipoTurismo` | `tipo_turismo` | Pendiente | Por asignar |
 | 4 | `CampoFormulario` | `campo_formulario` | Pendiente | Por asignar |
 | 5 | `EstadoRegistro` | `estado_registro` | Pendiente | Por asignar |
