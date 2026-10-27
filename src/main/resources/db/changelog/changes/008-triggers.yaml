@@ -1,0 +1,212 @@
+databaseChangeLog:
+  - changeSet:
+      id: 008-01-funcion-actualizar-timestamp
+      author: proyecto_viajo
+      comment: "Actualiza actualizado_en automáticamente"
+      changes:
+        - sql:
+            splitStatements: false
+            sql: |
+              CREATE OR REPLACE FUNCTION fn_actualizar_timestamp()
+              RETURNS TRIGGER
+              LANGUAGE plpgsql
+              AS $$
+              BEGIN
+                  NEW.actualizado_en := CURRENT_TIMESTAMP;
+                  RETURN NEW;
+              END;
+              $$;
+
+      rollback:
+        - sql:
+            sql: DROP FUNCTION IF EXISTS fn_actualizar_timestamp();
+
+  - changeSet:
+      id: 008-02-triggers-timestamp
+      author: proyecto_viajo
+      comment: "Crea triggers de actualización de fecha"
+      changes:
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_administrador_actualizado_en
+              BEFORE UPDATE ON administrador
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_actualizar_timestamp();
+
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_destino_actualizado_en
+              BEFORE UPDATE ON destino
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_actualizar_timestamp();
+
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_publicacion_actualizado_en
+              BEFORE UPDATE ON publicacion
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_actualizar_timestamp();
+
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_comentario_actualizado_en
+              BEFORE UPDATE ON comentario
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_actualizar_timestamp();
+
+      rollback:
+        - sql:
+            sql: DROP TRIGGER IF EXISTS trg_comentario_actualizado_en ON comentario;
+        - sql:
+            sql: DROP TRIGGER IF EXISTS trg_publicacion_actualizado_en ON publicacion;
+        - sql:
+            sql: DROP TRIGGER IF EXISTS trg_destino_actualizado_en ON destino;
+        - sql:
+            sql: DROP TRIGGER IF EXISTS trg_administrador_actualizado_en ON administrador;
+
+  - changeSet:
+      id: 008-03-funcion-preferencia-visitante
+      author: proyecto_viajo
+      comment: "Mantiene el historial de preferencias turísticas"
+      changes:
+        - sql:
+            splitStatements: false
+            sql: |
+              CREATE OR REPLACE FUNCTION fn_gestionar_preferencia_visitante()
+              RETURNS TRIGGER
+              LANGUAGE plpgsql
+              AS $$
+              BEGIN
+                  IF TG_OP = 'INSERT' THEN
+                      INSERT INTO preferencia_visitante (
+                          id_visitante,
+                          id_tipo_turismo,
+                          fecha_inicio,
+                          activa
+                      )
+                      VALUES (
+                          NEW.id_visitante,
+                          NEW.id_tipo_turismo,
+                          CURRENT_TIMESTAMP,
+                          TRUE
+                      );
+
+                      RETURN NEW;
+                  END IF;
+
+                  IF TG_OP = 'UPDATE'
+                     AND NEW.id_tipo_turismo IS DISTINCT FROM OLD.id_tipo_turismo
+                  THEN
+                      UPDATE preferencia_visitante
+                      SET activa = FALSE,
+                          fecha_fin = CURRENT_TIMESTAMP
+                      WHERE id_visitante = NEW.id_visitante
+                        AND activa = TRUE;
+
+                      INSERT INTO preferencia_visitante (
+                          id_visitante,
+                          id_tipo_turismo,
+                          fecha_inicio,
+                          activa
+                      )
+                      VALUES (
+                          NEW.id_visitante,
+                          NEW.id_tipo_turismo,
+                          CURRENT_TIMESTAMP,
+                          TRUE
+                      );
+                  END IF;
+
+                  RETURN NEW;
+              END;
+              $$;
+
+      rollback:
+        - sql:
+            sql: DROP FUNCTION IF EXISTS fn_gestionar_preferencia_visitante();
+
+  - changeSet:
+      id: 008-04-trigger-preferencia-visitante
+      author: proyecto_viajo
+      comment: "Crea y actualiza preferencias al modificar el perfil"
+      changes:
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_visitante_preferencia_insert
+              AFTER INSERT ON visitante
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_gestionar_preferencia_visitante();
+
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_visitante_preferencia_update
+              AFTER UPDATE OF id_tipo_turismo ON visitante
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_gestionar_preferencia_visitante();
+
+      rollback:
+        - sql:
+            sql: DROP TRIGGER IF EXISTS trg_visitante_preferencia_update ON visitante;
+        - sql:
+            sql: DROP TRIGGER IF EXISTS trg_visitante_preferencia_insert ON visitante;
+
+  - changeSet:
+      id: 008-05-funcion-solicitud-registro
+      author: proyecto_viajo
+      comment: "Actualiza actividad y fecha de finalización de solicitudes"
+      changes:
+        - sql:
+            splitStatements: false
+            sql: |
+              CREATE OR REPLACE FUNCTION fn_actualizar_solicitud_registro()
+              RETURNS TRIGGER
+              LANGUAGE plpgsql
+              AS $$
+              DECLARE
+                  v_nombre_estado VARCHAR(100);
+              BEGIN
+                  NEW.fecha_ultima_actividad := CURRENT_TIMESTAMP;
+
+                  SELECT UPPER(nombre)
+                  INTO v_nombre_estado
+                  FROM estado_registro
+                  WHERE id_estado_registro = NEW.id_estado_registro;
+
+                  IF v_nombre_estado IN (
+                      'ALMACENADO',
+                      'BLOQUEADO_MAX_INTENTOS',
+                      'FALLA_TECNICA',
+                      'CANCELADO_INACTIVIDAD'
+                  ) THEN
+                      IF NEW.fecha_finalizacion IS NULL THEN
+                          NEW.fecha_finalizacion := CURRENT_TIMESTAMP;
+                      END IF;
+                  ELSE
+                      NEW.fecha_finalizacion := NULL;
+                  END IF;
+
+                  RETURN NEW;
+              END;
+              $$;
+
+      rollback:
+        - sql:
+            sql: DROP FUNCTION IF EXISTS fn_actualizar_solicitud_registro();
+
+  - changeSet:
+      id: 008-06-trigger-solicitud-registro
+      author: proyecto_viajo
+      comment: "Activa la actualización automática de solicitudes"
+      changes:
+        - sql:
+            sql: |
+              CREATE TRIGGER trg_solicitud_registro_actividad
+              BEFORE UPDATE ON solicitud_registro
+              FOR EACH ROW
+              EXECUTE FUNCTION fn_actualizar_solicitud_registro();
+
+      rollback:
+        - sql:
+            sql: |
+              DROP TRIGGER IF EXISTS trg_solicitud_registro_actividad
+              ON solicitud_registro;

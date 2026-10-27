@@ -1,0 +1,447 @@
+databaseChangeLog:
+  - changeSet:
+      id: 006-01-crear-solicitud-registro
+      author: proyecto_viajo
+      comment: "Registra el ciclo de vida de las solicitudes de registro"
+      changes:
+        - createTable:
+            tableName: solicitud_registro
+            columns:
+              - column:
+                  name: id_solicitud_registro
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_solicitud_registro
+                    nullable: false
+
+              - column:
+                  name: id_usuario
+                  type: BIGINT
+
+              - column:
+                  name: id_estado_registro
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: correo
+                  type: VARCHAR(254)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: datos_enviados
+                  type: JSONB
+
+              - column:
+                  name: intentos
+                  type: INTEGER
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: fecha_creacion
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: fecha_ultima_actividad
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: fecha_finalizacion
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+              - column:
+                  name: token_confirmacion_hash
+                  type: VARCHAR(255)
+
+              - column:
+                  name: expira_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+              - column:
+                  name: observaciones
+                  type: TEXT
+
+        - addForeignKeyConstraint:
+            baseTableName: solicitud_registro
+            baseColumnNames: id_usuario
+            constraintName: fk_solicitud_registro_usuario
+            referencedTableName: usuario
+            referencedColumnNames: id_usuario
+            onDelete: SET NULL
+
+        - addForeignKeyConstraint:
+            baseTableName: solicitud_registro
+            baseColumnNames: id_estado_registro
+            constraintName: fk_solicitud_registro_estado
+            referencedTableName: estado_registro
+            referencedColumnNames: codigo
+            onDelete: RESTRICT
+
+        - sql:
+            sql: |
+              ALTER TABLE solicitud_registro
+              ADD CONSTRAINT chk_solicitud_registro_intentos
+              CHECK (intentos >= 0);
+
+      rollback:
+        - dropTable:
+            tableName: solicitud_registro
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 006-02-crear-error-validacion
+      author: proyecto_viajo
+      comment: "Guarda errores detectados durante la validación"
+      changes:
+        - createTable:
+            tableName: error_validacion
+            columns:
+              - column:
+                  name: id_error_validacion
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_error_validacion
+                    nullable: false
+
+              - column:
+                  name: id_solicitud_registro
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_campo_formulario
+                  type: VARCHAR(30)
+
+              - column:
+                  name: id_regla_validacion
+                  type: VARCHAR(30)
+
+              - column:
+                  name: codigo_error
+                  type: VARCHAR(80)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: mensaje
+                  type: TEXT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: valor_recibido
+                  type: TEXT
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: error_validacion
+            baseColumnNames: id_solicitud_registro
+            constraintName: fk_error_validacion_solicitud
+            referencedTableName: solicitud_registro
+            referencedColumnNames: id_solicitud_registro
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: error_validacion
+            baseColumnNames: id_campo_formulario
+            constraintName: fk_error_validacion_campo
+            referencedTableName: campo_formulario
+            referencedColumnNames: codigo
+            onDelete: SET NULL
+
+        - addForeignKeyConstraint:
+            baseTableName: error_validacion
+            baseColumnNames: id_regla_validacion
+            constraintName: fk_error_validacion_regla
+            referencedTableName: regla_validacion
+            referencedColumnNames: campo
+            onDelete: SET NULL
+
+      rollback:
+        - dropTable:
+            tableName: error_validacion
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 006-03-crear-confirmacion-registro
+      author: proyecto_viajo
+      comment: "Almacena las confirmaciones asociadas a una solicitud"
+      changes:
+        - createTable:
+            tableName: confirmacion_registro
+            columns:
+              - column:
+                  name: id_confirmacion
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_confirmacion_registro
+                    nullable: false
+
+              - column:
+                  name: id_solicitud_registro
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: token_hash
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: enviada_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: expira_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: confirmada_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+              - column:
+                  name: estado
+                  type: VARCHAR(20)
+                  defaultValue: PENDIENTE
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: confirmacion_registro
+            baseColumnNames: id_solicitud_registro
+            constraintName: fk_confirmacion_registro_solicitud
+            referencedTableName: solicitud_registro
+            referencedColumnNames: id_solicitud_registro
+            onDelete: CASCADE
+
+        - addUniqueConstraint:
+            tableName: confirmacion_registro
+            columnNames: token_hash
+            constraintName: uq_confirmacion_registro_token
+
+        - sql:
+            sql: |
+              ALTER TABLE confirmacion_registro
+              ADD CONSTRAINT chk_confirmacion_registro_estado
+              CHECK (estado IN (
+                'PENDIENTE',
+                'CONFIRMADA',
+                'EXPIRADA',
+                'CANCELADA'
+              ));
+
+        - sql:
+            sql: |
+              ALTER TABLE confirmacion_registro
+              ADD CONSTRAINT chk_confirmacion_registro_fechas
+              CHECK (
+                expira_en > enviada_en
+                AND (
+                  confirmada_en IS NULL
+                  OR confirmada_en >= enviada_en
+                )
+              );
+
+      rollback:
+        - dropTable:
+            tableName: confirmacion_registro
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 006-04-crear-incidente-tecnico
+      author: proyecto_viajo
+      comment: "Registra incidentes técnicos ocurridos durante el proceso"
+      changes:
+        - createTable:
+            tableName: incidente_tecnico
+            columns:
+              - column:
+                  name: id_incidente
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_incidente_tecnico
+                    nullable: false
+
+              - column:
+                  name: id_solicitud_registro
+                  type: BIGINT
+
+              - column:
+                  name: codigo
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: mensaje
+                  type: TEXT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: detalle_tecnico
+                  type: TEXT
+
+              - column:
+                  name: resuelto
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: ocurrido_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: resuelto_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+        - addForeignKeyConstraint:
+            baseTableName: incidente_tecnico
+            baseColumnNames: id_solicitud_registro
+            constraintName: fk_incidente_tecnico_solicitud
+            referencedTableName: solicitud_registro
+            referencedColumnNames: id_solicitud_registro
+            onDelete: SET NULL
+
+        - sql:
+            sql: |
+              ALTER TABLE incidente_tecnico
+              ADD CONSTRAINT chk_incidente_tecnico_fechas
+              CHECK (
+                resuelto_en IS NULL
+                OR resuelto_en >= ocurrido_en
+              );
+
+      rollback:
+        - dropTable:
+            tableName: incidente_tecnico
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 006-05-crear-bitacora-proceso
+      author: proyecto_viajo
+      comment: "Mantiene la trazabilidad de eventos y procesos"
+      changes:
+        - createTable:
+            tableName: bitacora_proceso
+            columns:
+              - column:
+                  name: id_bitacora
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_bitacora_proceso
+                    nullable: false
+
+              - column:
+                  name: id_solicitud_registro
+                  type: BIGINT
+
+              - column:
+                  name: id_usuario
+                  type: BIGINT
+
+              - column:
+                  name: proceso
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: evento
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: nivel
+                  type: VARCHAR(20)
+                  defaultValue: INFO
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: descripcion
+                  type: TEXT
+
+              - column:
+                  name: metadatos
+                  type: JSONB
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: bitacora_proceso
+            baseColumnNames: id_solicitud_registro
+            constraintName: fk_bitacora_proceso_solicitud
+            referencedTableName: solicitud_registro
+            referencedColumnNames: id_solicitud_registro
+            onDelete: SET NULL
+
+        - addForeignKeyConstraint:
+            baseTableName: bitacora_proceso
+            baseColumnNames: id_usuario
+            constraintName: fk_bitacora_proceso_usuario
+            referencedTableName: usuario
+            referencedColumnNames: id_usuario
+            onDelete: SET NULL
+
+        - sql:
+            sql: |
+              ALTER TABLE bitacora_proceso
+              ADD CONSTRAINT chk_bitacora_proceso_nivel
+              CHECK (nivel IN (
+                'DEBUG',
+                'INFO',
+                'WARN',
+                'ERROR',
+                'FATAL'
+              ));
+
+      rollback:
+        - dropTable:
+            tableName: bitacora_proceso
+            cascadeConstraints: true

@@ -1,0 +1,673 @@
+databaseChangeLog:
+  # ============================================================
+  # 1. Roles de usuarios
+  # ============================================================
+  - changeSet:
+      id: 001-01-rol
+      author: viajo
+      changes:
+        - createTable:
+            tableName: rol
+            columns:
+              - column:
+                  name: id_rol
+                  type: INTEGER
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_rol
+                    nullable: false
+              - column:
+                  name: nombre_rol
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+                    unique: true
+                    uniqueConstraintName: uq_rol_nombre
+              - column:
+                  name: descripcion
+                  type: VARCHAR(150)
+
+  # ============================================================
+  # 2. Roles del proceso de registro
+  # ============================================================
+  - changeSet:
+      id: 001-02-rol-proceso
+      author: viajo
+      changes:
+        - createTable:
+            tableName: rol_proceso
+            columns:
+              - column:
+                  name: codigo
+                  type: VARCHAR(20)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_rol_proceso
+                    nullable: false
+              - column:
+                  name: tipo
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: responsabilidad
+                  type: VARCHAR(400)
+                  constraints:
+                    nullable: false
+
+  # ============================================================
+  # 3. Tipos de turismo
+  # ============================================================
+  - changeSet:
+      id: 001-03-tipo-turismo
+      author: viajo
+      changes:
+        - createTable:
+            tableName: tipo_turismo
+            columns:
+              - column:
+                  name: codigo
+                  type: VARCHAR(20)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_tipo_turismo
+                    nullable: false
+              - column:
+                  name: descripcion
+                  type: VARCHAR(80)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: orden
+                  type: SMALLINT
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
+              - column:
+                  name: activo
+                  type: BOOLEAN
+                  defaultValueBoolean: true
+                  constraints:
+                    nullable: false
+        - sql:
+            sql: |
+              ALTER TABLE tipo_turismo
+              ADD CONSTRAINT chk_tipo_turismo_codigo
+              CHECK (codigo = lower(codigo));
+
+  # ============================================================
+  # 4. Campos del formulario
+  # ============================================================
+  - changeSet:
+      id: 001-04-campo-formulario
+      author: viajo
+      changes:
+        - createTable:
+            tableName: campo_formulario
+            columns:
+              - column:
+                  name: codigo
+                  type: VARCHAR(30)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_campo_formulario
+                    nullable: false
+              - column:
+                  name: etiqueta
+                  type: VARCHAR(60)
+                  constraints:
+                    nullable: false
+
+  # ============================================================
+  # 5. Reglas de validación
+  # ============================================================
+  - changeSet:
+      id: 001-05-regla-validacion
+      author: viajo
+      changes:
+        - createTable:
+            tableName: regla_validacion
+            columns:
+              - column:
+                  name: campo
+                  type: VARCHAR(30)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_regla_validacion
+                    nullable: false
+              - column:
+                  name: regla
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: mensaje
+                  type: VARCHAR(120)
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseTableName: regla_validacion
+            baseColumnNames: campo
+            constraintName: fk_regla_validacion_campo
+            referencedTableName: campo_formulario
+            referencedColumnNames: codigo
+            onUpdate: CASCADE
+            onDelete: CASCADE
+
+  # ============================================================
+  # 6. Estados del proceso de registro
+  # ============================================================
+  - changeSet:
+      id: 001-06-estado-registro
+      author: viajo
+      changes:
+        - createTable:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  type: VARCHAR(30)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_estado_registro
+                    nullable: false
+              - column:
+                  name: significado
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: accion
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: es_final
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+
+  # ============================================================
+  # 7. Estados de moderación
+  # ============================================================
+  - changeSet:
+      id: 001-07-estado-moderacion
+      author: viajo
+      changes:
+        - createTable:
+            tableName: estado_moderacion
+            columns:
+              - column:
+                  name: id_estado
+                  type: INTEGER
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_estado_moderacion
+                    nullable: false
+              - column:
+                  name: nombre_estado
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+                    unique: true
+                    uniqueConstraintName: uq_estado_moderacion_nombre
+              - column:
+                  name: descripcion
+                  type: VARCHAR(150)
+
+  # ============================================================
+  # 8. Motivos de rechazo
+  # ============================================================
+  - changeSet:
+      id: 001-08-motivo-rechazo
+      author: viajo
+      changes:
+        - createTable:
+            tableName: motivo_rechazo
+            columns:
+              - column:
+                  name: id_motivo
+                  type: INTEGER
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_motivo_rechazo
+                    nullable: false
+              - column:
+                  name: nombre_motivo
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+                    unique: true
+                    uniqueConstraintName: uq_motivo_rechazo_nombre
+              - column:
+                  name: descripcion
+                  type: VARCHAR(150)
+              - column:
+                  name: gravedad
+                  type: SMALLINT
+                  defaultValueNumeric: 1
+                  constraints:
+                    nullable: false
+        - sql:
+            sql: |
+              ALTER TABLE motivo_rechazo
+              ADD CONSTRAINT chk_motivo_rechazo_gravedad
+              CHECK (gravedad BETWEEN 1 AND 3);
+
+  # ============================================================
+  # 9. Categorías de destinos
+  # ============================================================
+  - changeSet:
+      id: 001-09-categoria-destino
+      author: viajo
+      changes:
+        - createTable:
+            tableName: categoria_destino
+            columns:
+              - column:
+                  name: codigo
+                  type: VARCHAR(20)
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_categoria_destino
+                    nullable: false
+              - column:
+                  name: descripcion
+                  type: VARCHAR(80)
+                  constraints:
+                    nullable: false
+
+  # ============================================================
+  # 10. Datos iniciales de catálogos
+  # ============================================================
+  - changeSet:
+      id: 001-10-datos-iniciales
+      author: viajo
+      changes:
+        # Roles de aplicación
+        - insert:
+            tableName: rol
+            columns:
+              - column:
+                  name: id_rol
+                  valueNumeric: 1
+              - column:
+                  name: nombre_rol
+                  value: ADMINISTRADOR
+              - column:
+                  name: descripcion
+                  value: Rol de administración del sistema
+
+        - insert:
+            tableName: rol
+            columns:
+              - column:
+                  name: id_rol
+                  valueNumeric: 2
+              - column:
+                  name: nombre_rol
+                  value: VISITANTE
+              - column:
+                  name: descripcion
+                  value: Rol de usuario visitante
+
+        # Roles del proceso
+        - insert:
+            tableName: rol_proceso
+            columns:
+              - column:
+                  name: codigo
+                  value: VISITANTE
+              - column:
+                  name: tipo
+                  value: HUMANO
+              - column:
+                  name: responsabilidad
+                  value: Interactuar con el portal turístico
+
+        - insert:
+            tableName: rol_proceso
+            columns:
+              - column:
+                  name: codigo
+                  value: SISTEMA
+              - column:
+                  name: tipo
+                  value: SISTEMA
+              - column:
+                  name: responsabilidad
+                  value: Ejecutar validaciones y automatizaciones
+
+        - insert:
+            tableName: rol_proceso
+            columns:
+              - column:
+                  name: codigo
+                  value: ADMINISTRADOR
+              - column:
+                  name: tipo
+                  value: HUMANO
+              - column:
+                  name: responsabilidad
+                  value: Administrar el portal turístico
+
+        # Tipos de turismo
+        - insert:
+            tableName: tipo_turismo
+            columns:
+              - column:
+                  name: codigo
+                  value: cultural
+              - column:
+                  name: descripcion
+                  value: Turismo cultural
+              - column:
+                  name: orden
+                  valueNumeric: 1
+
+        - insert:
+            tableName: tipo_turismo
+            columns:
+              - column:
+                  name: codigo
+                  value: aventura
+              - column:
+                  name: descripcion
+                  value: Turismo de aventura
+              - column:
+                  name: orden
+                  valueNumeric: 2
+
+        - insert:
+            tableName: tipo_turismo
+            columns:
+              - column:
+                  name: codigo
+                  value: naturaleza
+              - column:
+                  name: descripcion
+                  value: Turismo de naturaleza
+              - column:
+                  name: orden
+                  valueNumeric: 3
+
+        # Estados de moderación: los IDs 1 y 2
+        # son utilizados por los procesos y vistas.
+        - insert:
+            tableName: estado_moderacion
+            columns:
+              - column:
+                  name: id_estado
+                  valueNumeric: 1
+              - column:
+                  name: nombre_estado
+                  value: PENDIENTE
+              - column:
+                  name: descripcion
+                  value: Comentario pendiente de moderación
+
+        - insert:
+            tableName: estado_moderacion
+            columns:
+              - column:
+                  name: id_estado
+                  valueNumeric: 2
+              - column:
+                  name: nombre_estado
+                  value: APROBADO
+              - column:
+                  name: descripcion
+                  value: Comentario aprobado
+
+        - insert:
+            tableName: estado_moderacion
+            columns:
+              - column:
+                  name: id_estado
+                  valueNumeric: 3
+              - column:
+                  name: nombre_estado
+                  value: RECHAZADO
+              - column:
+                  name: descripcion
+                  value: Comentario rechazado
+
+        # Motivos de rechazo
+        - insert:
+            tableName: motivo_rechazo
+            columns:
+              - column:
+                  name: id_motivo
+                  valueNumeric: 1
+              - column:
+                  name: nombre_motivo
+                  value: CONTENIDO_INAPROPIADO
+              - column:
+                  name: descripcion
+                  value: Contenido que incumple las normas
+              - column:
+                  name: gravedad
+                  valueNumeric: 2
+
+        # Categorías de destinos
+        - insert:
+            tableName: categoria_destino
+            columns:
+              - column:
+                  name: codigo
+                  value: arqueologico
+              - column:
+                  name: descripcion
+                  value: Sitio arqueológico
+
+        - insert:
+            tableName: categoria_destino
+            columns:
+              - column:
+                  name: codigo
+                  value: natural
+              - column:
+                  name: descripcion
+                  value: Atractivo natural
+
+        - insert:
+            tableName: categoria_destino
+            columns:
+              - column:
+                  name: codigo
+                  value: cultural
+              - column:
+                  name: descripcion
+                  value: Atractivo cultural
+
+        # Campos de formulario
+        - insert:
+            tableName: campo_formulario
+            columns:
+              - column:
+                  name: codigo
+                  value: nombre
+              - column:
+                  name: etiqueta
+                  value: Nombre completo
+
+        - insert:
+            tableName: campo_formulario
+            columns:
+              - column:
+                  name: codigo
+                  value: correo_electronico
+              - column:
+                  name: etiqueta
+                  value: Correo electrónico
+
+        - insert:
+            tableName: campo_formulario
+            columns:
+              - column:
+                  name: codigo
+                  value: telefono
+              - column:
+                  name: etiqueta
+                  value: Teléfono
+
+        # Estados del registro
+        - insert:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  value: EN_CAPTURA
+              - column:
+                  name: significado
+                  value: Solicitud en captura
+              - column:
+                  name: accion
+                  value: Continuar completando el formulario
+              - column:
+                  name: es_final
+                  valueBoolean: false
+
+        - insert:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  value: CORRECCION_REQUERIDA
+              - column:
+                  name: significado
+                  value: Requiere corregir datos
+              - column:
+                  name: accion
+                  value: Corregir los campos indicados
+              - column:
+                  name: es_final
+                  valueBoolean: false
+
+        - insert:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  value: ALMACENADO
+              - column:
+                  name: significado
+                  value: Registro completado
+              - column:
+                  name: accion
+                  value: Finalizar proceso
+              - column:
+                  name: es_final
+                  valueBoolean: true
+
+        - insert:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  value: BLOQUEADO_MAX_INTENTOS
+              - column:
+                  name: significado
+                  value: Máximo de intentos alcanzado
+              - column:
+                  name: accion
+                  value: Bloquear solicitud
+              - column:
+                  name: es_final
+                  valueBoolean: true
+
+        - insert:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  value: FALLA_TECNICA
+              - column:
+                  name: significado
+                  value: Falla técnica
+              - column:
+                  name: accion
+                  value: Registrar incidente técnico
+              - column:
+                  name: es_final
+                  valueBoolean: true
+
+        - insert:
+            tableName: estado_registro
+            columns:
+              - column:
+                  name: codigo
+                  value: CANCELADO_INACTIVIDAD
+              - column:
+                  name: significado
+                  value: Cancelado por inactividad
+              - column:
+                  name: accion
+                  value: Cerrar solicitud
+              - column:
+                  name: es_final
+                  valueBoolean: true
+
+        # Reglas iniciales de validación
+        - insert:
+            tableName: regla_validacion
+            columns:
+              - column:
+                  name: campo
+                  value: nombre
+              - column:
+                  name: regla
+                  value: Longitud entre 3 y 100 caracteres
+              - column:
+                  name: mensaje
+                  value: El nombre debe tener entre 3 y 100 caracteres
+
+        - insert:
+            tableName: regla_validacion
+            columns:
+              - column:
+                  name: campo
+                  value: correo_electronico
+              - column:
+                  name: regla
+                  value: Formato de correo electrónico válido
+              - column:
+                  name: mensaje
+                  value: Ingrese un correo válido
+
+        - insert:
+            tableName: regla_validacion
+            columns:
+              - column:
+                  name: campo
+                  value: telefono
+              - column:
+                  name: regla
+                  value: Entre 7 y 15 dígitos, prefijo + opcional
+              - column:
+                  name: mensaje
+                  value: Ingrese un teléfono válido
+
+      rollback:
+        - delete:
+            tableName: regla_validacion
+        - delete:
+            tableName: estado_registro
+        - delete:
+            tableName: categoria_destino
+        - delete:
+            tableName: motivo_rechazo
+        - delete:
+            tableName: estado_moderacion
+        - delete:
+            tableName: tipo_turismo
+        - delete:
+            tableName: rol_proceso
+        - delete:
+            tableName: rol
+        - delete:
+            tableName: campo_formulario

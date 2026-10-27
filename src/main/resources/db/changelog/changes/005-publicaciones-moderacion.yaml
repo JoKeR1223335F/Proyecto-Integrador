@@ -1,0 +1,458 @@
+databaseChangeLog:
+  - changeSet:
+      id: 005-01-crear-publicacion
+      author: proyecto_viajo
+      comment: "Crea publicaciones vinculadas a destinos"
+      changes:
+        - createTable:
+            tableName: publicacion
+            columns:
+              - column:
+                  name: id_publicacion
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_publicacion
+                    nullable: false
+
+              - column:
+                  name: id_destino
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_visitante
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: titulo
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: contenido
+                  type: TEXT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: estado_moderacion
+                  type: INTEGER
+                  defaultValueNumeric: 1
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: publicada_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: actualizado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: publicacion
+            baseColumnNames: id_destino
+            constraintName: fk_publicacion_destino
+            referencedTableName: destino
+            referencedColumnNames: id_destino
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: publicacion
+            baseColumnNames: id_visitante
+            constraintName: fk_publicacion_visitante
+            referencedTableName: visitante
+            referencedColumnNames: id_visitante
+            onDelete: RESTRICT
+
+        - addForeignKeyConstraint:
+            baseTableName: publicacion
+            baseColumnNames: estado_moderacion
+            constraintName: fk_publicacion_estado_moderacion
+            referencedTableName: estado_moderacion
+            referencedColumnNames: id_estado
+            onDelete: RESTRICT
+
+      rollback:
+        - dropTable:
+            tableName: publicacion
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 005-02-crear-comentario
+      author: proyecto_viajo
+      comment: "Crea comentarios de visitantes en publicaciones"
+      changes:
+        - createTable:
+            tableName: comentario
+            columns:
+              - column:
+                  name: id_comentario
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_comentario
+                    nullable: false
+
+              - column:
+                  name: id_publicacion
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_visitante
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: contenido
+                  type: TEXT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: estado_moderacion
+                  type: INTEGER
+                  defaultValueNumeric: 1
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: actualizado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: comentario
+            baseColumnNames: id_publicacion
+            constraintName: fk_comentario_publicacion
+            referencedTableName: publicacion
+            referencedColumnNames: id_publicacion
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: comentario
+            baseColumnNames: id_visitante
+            constraintName: fk_comentario_visitante
+            referencedTableName: visitante
+            referencedColumnNames: id_visitante
+            onDelete: RESTRICT
+
+        - addForeignKeyConstraint:
+            baseTableName: comentario
+            baseColumnNames: estado_moderacion
+            constraintName: fk_comentario_estado_moderacion
+            referencedTableName: estado_moderacion
+            referencedColumnNames: id_estado
+            onDelete: RESTRICT
+
+      rollback:
+        - dropTable:
+            tableName: comentario
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 005-03-crear-reporte-comentario
+      author: proyecto_viajo
+      comment: "Permite reportar comentarios para revisión"
+      changes:
+        - createTable:
+            tableName: reporte_comentario
+            columns:
+              - column:
+                  name: id_reporte
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_reporte_comentario
+                    nullable: false
+
+              - column:
+                  name: id_comentario
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_visitante
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_motivo_rechazo
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: detalle
+                  type: TEXT
+
+              - column:
+                  name: estado
+                  type: VARCHAR(20)
+                  defaultValue: PENDIENTE
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: reporte_comentario
+            baseColumnNames: id_comentario
+            constraintName: fk_reporte_comentario_comentario
+            referencedTableName: comentario
+            referencedColumnNames: id_comentario
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: reporte_comentario
+            baseColumnNames: id_visitante
+            constraintName: fk_reporte_comentario_visitante
+            referencedTableName: visitante
+            referencedColumnNames: id_visitante
+            onDelete: RESTRICT
+
+        - addForeignKeyConstraint:
+            baseTableName: reporte_comentario
+            baseColumnNames: id_motivo_rechazo
+            constraintName: fk_reporte_comentario_motivo
+            referencedTableName: motivo_rechazo
+            referencedColumnNames: id_motivo
+            onDelete: RESTRICT
+
+        - sql:
+            sql: |
+              ALTER TABLE reporte_comentario
+              ADD CONSTRAINT chk_reporte_comentario_estado
+              CHECK (estado IN (
+                'PENDIENTE',
+                'REVISADO',
+                'DESCARTADO'
+              ));
+
+      rollback:
+        - dropTable:
+            tableName: reporte_comentario
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 005-04-crear-moderacion
+      author: proyecto_viajo
+      comment: "Registra decisiones de moderación"
+      changes:
+        - createTable:
+            tableName: moderacion
+            columns:
+              - column:
+                  name: id_moderacion
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_moderacion
+                    nullable: false
+
+              - column:
+                  name: id_administrador
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_estado_moderacion
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_motivo_rechazo
+                  type: INTEGER
+
+              - column:
+                  name: tipo_objeto
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_objeto
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: observaciones
+                  type: TEXT
+
+              - column:
+                  name: moderado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: moderacion
+            baseColumnNames: id_administrador
+            constraintName: fk_moderacion_administrador
+            referencedTableName: administrador
+            referencedColumnNames: id_administrador
+            onDelete: RESTRICT
+
+        - addForeignKeyConstraint:
+            baseTableName: moderacion
+            baseColumnNames: id_estado_moderacion
+            constraintName: fk_moderacion_estado
+            referencedTableName: estado_moderacion
+            referencedColumnNames: id_estado
+            onDelete: RESTRICT
+
+        - addForeignKeyConstraint:
+            baseTableName: moderacion
+            baseColumnNames: id_motivo_rechazo
+            constraintName: fk_moderacion_motivo
+            referencedTableName: motivo_rechazo
+            referencedColumnNames: id_motivo
+            onDelete: RESTRICT
+
+        - sql:
+            sql: |
+              ALTER TABLE moderacion
+              ADD CONSTRAINT chk_moderacion_tipo_objeto
+              CHECK (tipo_objeto IN (
+                'DESTINO',
+                'PUBLICACION',
+                'COMENTARIO'
+              ));
+
+      rollback:
+        - dropTable:
+            tableName: moderacion
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 005-05-crear-notificacion
+      author: proyecto_viajo
+      comment: "Almacena notificaciones para visitantes y administradores"
+      changes:
+        - createTable:
+            tableName: notificacion
+            columns:
+              - column:
+                  name: id_notificacion
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_notificacion
+                    nullable: false
+
+              - column:
+                  name: id_visitante
+                  type: BIGINT
+
+              - column:
+                  name: id_administrador
+                  type: BIGINT
+
+              - column:
+                  name: titulo
+                  type: VARCHAR(180)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: mensaje
+                  type: TEXT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: tipo
+                  type: VARCHAR(40)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: leida
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: leida_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+        - addForeignKeyConstraint:
+            baseTableName: notificacion
+            baseColumnNames: id_visitante
+            constraintName: fk_notificacion_visitante
+            referencedTableName: visitante
+            referencedColumnNames: id_visitante
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: notificacion
+            baseColumnNames: id_administrador
+            constraintName: fk_notificacion_administrador
+            referencedTableName: administrador
+            referencedColumnNames: id_administrador
+            onDelete: CASCADE
+
+        - sql:
+            sql: |
+              ALTER TABLE notificacion
+              ADD CONSTRAINT chk_notificacion_destinatario
+              CHECK (
+                id_visitante IS NOT NULL
+                OR id_administrador IS NOT NULL
+              );
+
+      rollback:
+        - dropTable:
+            tableName: notificacion
+            cascadeConstraints: true

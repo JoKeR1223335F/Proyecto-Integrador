@@ -1,0 +1,100 @@
+databaseChangeLog:
+  - changeSet:
+      id: 009-01-vista-destinos-publicados
+      author: proyecto_viajo
+      changes:
+        - sql:
+            sql: |
+              CREATE OR REPLACE VIEW vw_destinos_publicados AS
+              SELECT
+                  d.id_destino,
+                  d.nombre,
+                  d.descripcion,
+                  d.ubicacion,
+                  d.distrito,
+                  d.provincia,
+                  d.departamento,
+                  d.latitud,
+                  d.longitud,
+                  d.id_categoria_destino,
+                  cd.descripcion AS categoria,
+                  d.id_visitante,
+                  d.creado_en,
+                  d.actualizado_en
+              FROM destino d
+              INNER JOIN categoria_destino cd
+                  ON cd.codigo = d.id_categoria_destino
+              WHERE d.estado = 'PUBLICADO';
+
+      rollback:
+        - sql:
+            sql: DROP VIEW IF EXISTS vw_destinos_publicados;
+
+  - changeSet:
+      id: 009-02-vista-comentarios-publicados
+      author: proyecto_viajo
+      comment: "Consulta comentarios aprobados y sus publicaciones"
+      changes:
+        - sql:
+            splitStatements: false
+            sql: |
+              CREATE OR REPLACE VIEW vw_comentarios_publicados AS
+              SELECT
+                  c.id_comentario,
+                  c.id_publicacion,
+                  p.titulo AS titulo_publicacion,
+                  c.id_visitante,
+                  c.contenido,
+                  c.creado_en,
+                  c.actualizado_en,
+                  c.estado_moderacion
+              FROM comentario c
+              INNER JOIN publicacion p
+                  ON p.id_publicacion = c.id_publicacion
+              WHERE c.estado_moderacion = 2
+                AND p.estado_moderacion = 2;
+
+      rollback:
+        - sql:
+            sql: DROP VIEW IF EXISTS vw_comentarios_publicados;
+
+  - changeSet:
+      id: 009-03-vista-solicitudes-por-corregir
+      author: proyecto_viajo
+      changes:
+        - sql:
+            sql: |
+              CREATE OR REPLACE VIEW vw_solicitudes_por_corregir AS
+              SELECT
+                  sr.id_solicitud_registro,
+                  sr.id_usuario,
+                  sr.correo,
+                  sr.id_estado_registro,
+                  er.significado AS estado_registro,
+                  sr.intentos,
+                  sr.fecha_creacion,
+                  sr.fecha_ultima_actividad,
+                  COUNT(ev.id_error_validacion) AS total_errores
+              FROM solicitud_registro sr
+              INNER JOIN estado_registro er
+                  ON er.codigo = sr.id_estado_registro
+              LEFT JOIN error_validacion ev
+                  ON ev.id_solicitud_registro = sr.id_solicitud_registro
+              WHERE UPPER(er.codigo) IN (
+                  'PENDIENTE_CORRECCION',
+                  'REQUIERE_CORRECCION',
+                  'OBSERVADO'
+              )
+              GROUP BY
+                  sr.id_solicitud_registro,
+                  sr.id_usuario,
+                  sr.correo,
+                  sr.id_estado_registro,
+                  er.significado,
+                  sr.intentos,
+                  sr.fecha_creacion,
+                  sr.fecha_ultima_actividad;
+
+      rollback:
+        - sql:
+            sql: DROP VIEW IF EXISTS vw_solicitudes_por_corregir;

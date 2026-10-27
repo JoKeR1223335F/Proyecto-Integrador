@@ -1,0 +1,319 @@
+databaseChangeLog:
+  - changeSet:
+      id: 004-01-crear-destino
+      author: proyecto_viajo
+      comment: "Crea los destinos turísticos"
+      changes:
+        - createTable:
+            tableName: destino
+            columns:
+              - column:
+                  name: id_destino
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_destino
+                    nullable: false
+
+              - column:
+                  name: id_categoria_destino
+                  type: VARCHAR(20)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_visitante
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: nombre
+                  type: VARCHAR(180)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: descripcion
+                  type: TEXT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: ubicacion
+                  type: VARCHAR(250)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: distrito
+                  type: VARCHAR(100)
+
+              - column:
+                  name: provincia
+                  type: VARCHAR(100)
+                  defaultValue: Ica
+
+              - column:
+                  name: departamento
+                  type: VARCHAR(100)
+                  defaultValue: Ica
+
+              - column:
+                  name: latitud
+                  type: NUMERIC(10,7)
+
+              - column:
+                  name: longitud
+                  type: NUMERIC(10,7)
+
+              - column:
+                  name: estado
+                  type: VARCHAR(20)
+                  defaultValue: BORRADOR
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: actualizado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: destino
+            baseColumnNames: id_categoria_destino
+            constraintName: fk_destino_categoria
+            referencedTableName: categoria_destino
+            referencedColumnNames: codigo
+            onDelete: RESTRICT
+
+        - addForeignKeyConstraint:
+            baseTableName: destino
+            baseColumnNames: id_visitante
+            constraintName: fk_destino_visitante
+            referencedTableName: visitante
+            referencedColumnNames: id_visitante
+            onDelete: RESTRICT
+
+        - sql:
+            comment: "Valida coordenadas geográficas y estado del destino"
+            sql: |
+              ALTER TABLE destino
+              ADD CONSTRAINT chk_destino_latitud
+              CHECK (latitud IS NULL OR latitud BETWEEN -90 AND 90);
+
+              ALTER TABLE destino
+              ADD CONSTRAINT chk_destino_longitud
+              CHECK (longitud IS NULL OR longitud BETWEEN -180 AND 180);
+
+              ALTER TABLE destino
+              ADD CONSTRAINT chk_destino_estado
+              CHECK (estado IN (
+                'BORRADOR',
+                'PENDIENTE',
+                'PUBLICADO',
+                'RECHAZADO',
+                'ARCHIVADO'
+              ));
+
+      rollback:
+        - dropTable:
+            tableName: destino
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 004-02-crear-destino-imagen
+      author: proyecto_viajo
+      comment: "Almacena las imágenes asociadas a cada destino"
+      changes:
+        - createTable:
+            tableName: destino_imagen
+            columns:
+              - column:
+                  name: id_destino_imagen
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_destino_imagen
+                    nullable: false
+
+              - column:
+                  name: id_destino
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: url_imagen
+                  type: VARCHAR(1000)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: texto_alternativo
+                  type: VARCHAR(250)
+
+              - column:
+                  name: es_principal
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: orden
+                  type: INTEGER
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: creado_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+        - addForeignKeyConstraint:
+            baseTableName: destino_imagen
+            baseColumnNames: id_destino
+            constraintName: fk_destino_imagen_destino
+            referencedTableName: destino
+            referencedColumnNames: id_destino
+            onDelete: CASCADE
+
+        - sql:
+            comment: "Permite una sola imagen principal por destino"
+            sql: |
+              CREATE UNIQUE INDEX uq_destino_imagen_principal
+              ON destino_imagen (id_destino)
+              WHERE es_principal = TRUE;
+
+        - sql:
+            sql: |
+              ALTER TABLE destino_imagen
+              ADD CONSTRAINT chk_destino_imagen_orden
+              CHECK (orden >= 0);
+
+      rollback:
+        - dropTable:
+            tableName: destino_imagen
+            cascadeConstraints: true
+
+  - changeSet:
+      id: 004-03-crear-solicitud-operacion
+      author: proyecto_viajo
+      comment: "Registra solicitudes de operación sobre destinos"
+      changes:
+        - createTable:
+            tableName: solicitud_operacion
+            columns:
+              - column:
+                  name: id_solicitud_operacion
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_solicitud_operacion
+                    nullable: false
+
+              - column:
+                  name: id_destino
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: id_administrador
+                  type: BIGINT
+
+              - column:
+                  name: tipo_operacion
+                  type: VARCHAR(30)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: estado
+                  type: VARCHAR(20)
+                  defaultValue: PENDIENTE
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: motivo
+                  type: TEXT
+
+              - column:
+                  name: observaciones
+                  type: TEXT
+
+              - column:
+                  name: solicitada_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: resuelta_en
+                  type: TIMESTAMP WITHOUT TIME ZONE
+
+        - addForeignKeyConstraint:
+            baseTableName: solicitud_operacion
+            baseColumnNames: id_destino
+            constraintName: fk_solicitud_operacion_destino
+            referencedTableName: destino
+            referencedColumnNames: id_destino
+            onDelete: CASCADE
+
+        - addForeignKeyConstraint:
+            baseTableName: solicitud_operacion
+            baseColumnNames: id_administrador
+            constraintName: fk_solicitud_operacion_administrador
+            referencedTableName: administrador
+            referencedColumnNames: id_administrador
+            onDelete: SET NULL
+
+        - sql:
+            sql: |
+              ALTER TABLE solicitud_operacion
+              ADD CONSTRAINT chk_solicitud_operacion_tipo
+              CHECK (tipo_operacion IN (
+                'PUBLICAR',
+                'EDITAR',
+                'RETIRAR',
+                'ELIMINAR'
+              ));
+
+              ALTER TABLE solicitud_operacion
+              ADD CONSTRAINT chk_solicitud_operacion_estado
+              CHECK (estado IN (
+                'PENDIENTE',
+                'APROBADA',
+                'RECHAZADA',
+                'CANCELADA'
+              ));
+
+              ALTER TABLE solicitud_operacion
+              ADD CONSTRAINT chk_solicitud_operacion_fechas
+              CHECK (
+                resuelta_en IS NULL
+                OR resuelta_en >= solicitada_en
+              );
+
+      rollback:
+        - dropTable:
+            tableName: solicitud_operacion
+            cascadeConstraints: true

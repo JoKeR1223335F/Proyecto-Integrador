@@ -1,0 +1,398 @@
+databaseChangeLog:
+  - changeSet:
+      id: 007-01-indices-seguridad
+      author: proyecto_viajo
+      comment: "Índices para usuarios y administradores"
+      changes:
+        - createIndex:
+            tableName: usuario
+            indexName: idx_usuario_correo
+            unique: true
+            columns:
+              - column:
+                  name: correo
+
+        - createIndex:
+            tableName: usuario
+            indexName: idx_usuario_estado
+            columns:
+              - column:
+                  name: estado
+
+        - createIndex:
+            tableName: administrador
+            indexName: idx_administrador_correo
+            unique: true
+            columns:
+              - column:
+                  name: correo
+
+        - createIndex:
+            tableName: administrador
+            indexName: idx_administrador_rol
+            columns:
+              - column:
+                  name: id_rol
+
+      rollback:
+        - dropIndex:
+            tableName: administrador
+            indexName: idx_administrador_rol
+        - dropIndex:
+            tableName: administrador
+            indexName: idx_administrador_correo
+        - dropIndex:
+            tableName: usuario
+            indexName: idx_usuario_estado
+        - dropIndex:
+            tableName: usuario
+            indexName: idx_usuario_correo
+
+  - changeSet:
+      id: 007-02-indices-visitantes-destinos
+      author: proyecto_viajo
+      comment: "Índices para visitantes y destinos"
+      changes:
+        - createIndex:
+            tableName: visitante
+            indexName: idx_visitante_tipo_turismo
+            columns:
+              - column:
+                  name: id_tipo_turismo
+
+        - createIndex:
+            tableName: preferencia_visitante
+            indexName: idx_preferencia_visitante_tipo
+            columns:
+              - column:
+                  name: id_tipo_turismo
+
+        - createIndex:
+            tableName: destino
+            indexName: idx_destino_categoria
+            columns:
+              - column:
+                  name: id_categoria_destino
+
+        - createIndex:
+            tableName: destino
+            indexName: idx_destino_visitante
+            columns:
+              - column:
+                  name: id_visitante
+
+        - createIndex:
+            tableName: destino
+            indexName: idx_destino_estado_fecha
+            columns:
+              - column:
+                  name: estado
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: destino
+            indexName: idx_destino_ubicacion
+            columns:
+              - column:
+                  name: departamento
+              - column:
+                  name: provincia
+              - column:
+                  name: distrito
+
+        - createIndex:
+            tableName: destino_imagen
+            indexName: idx_destino_imagen_destino
+            columns:
+              - column:
+                  name: id_destino
+
+        - createIndex:
+            tableName: solicitud_operacion
+            indexName: idx_solicitud_operacion_estado_fecha
+            columns:
+              - column:
+                  name: estado
+              - column:
+                  name: solicitada_en
+
+        - createIndex:
+            tableName: solicitud_operacion
+            indexName: idx_solicitud_operacion_administrador
+            columns:
+              - column:
+                  name: id_administrador
+
+      rollback:
+        - dropIndex:
+            tableName: solicitud_operacion
+            indexName: idx_solicitud_operacion_administrador
+        - dropIndex:
+            tableName: solicitud_operacion
+            indexName: idx_solicitud_operacion_estado_fecha
+        - dropIndex:
+            tableName: destino_imagen
+            indexName: idx_destino_imagen_destino
+        - dropIndex:
+            tableName: destino
+            indexName: idx_destino_ubicacion
+        - dropIndex:
+            tableName: destino
+            indexName: idx_destino_estado_fecha
+        - dropIndex:
+            tableName: destino
+            indexName: idx_destino_visitante
+        - dropIndex:
+            tableName: destino
+            indexName: idx_destino_categoria
+        - dropIndex:
+            tableName: preferencia_visitante
+            indexName: idx_preferencia_visitante_tipo
+        - dropIndex:
+            tableName: visitante
+            indexName: idx_visitante_tipo_turismo
+
+  - changeSet:
+      id: 007-03-indices-publicaciones
+      author: proyecto_viajo
+      comment: "Índices para publicaciones, comentarios y moderación"
+      changes:
+        - createIndex:
+            tableName: publicacion
+            indexName: idx_publicacion_destino
+            columns:
+              - column:
+                  name: id_destino
+
+        - createIndex:
+            tableName: publicacion
+            indexName: idx_publicacion_visitante
+            columns:
+              - column:
+                  name: id_visitante
+
+        - createIndex:
+            tableName: publicacion
+            indexName: idx_publicacion_estado_fecha
+            columns:
+              - column:
+                  name: estado_moderacion
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: comentario
+            indexName: idx_comentario_publicacion_fecha
+            columns:
+              - column:
+                  name: id_publicacion
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: comentario
+            indexName: idx_comentario_visitante
+            columns:
+              - column:
+                  name: id_visitante
+
+        - createIndex:
+            tableName: comentario
+            indexName: idx_comentario_estado_fecha
+            columns:
+              - column:
+                  name: estado_moderacion
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: reporte_comentario
+            indexName: idx_reporte_comentario_estado_fecha
+            columns:
+              - column:
+                  name: estado
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: reporte_comentario
+            indexName: idx_reporte_comentario_visitante
+            columns:
+              - column:
+                  name: id_visitante
+
+        - createIndex:
+            tableName: moderacion
+            indexName: idx_moderacion_objeto
+            columns:
+              - column:
+                  name: tipo_objeto
+              - column:
+                  name: id_objeto
+
+        - createIndex:
+            tableName: moderacion
+            indexName: idx_moderacion_administrador_fecha
+            columns:
+              - column:
+                  name: id_administrador
+              - column:
+                  name: moderado_en
+
+        - createIndex:
+            tableName: notificacion
+            indexName: idx_notificacion_visitante_leida
+            columns:
+              - column:
+                  name: id_visitante
+              - column:
+                  name: leida
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: notificacion
+            indexName: idx_notificacion_administrador_leida
+            columns:
+              - column:
+                  name: id_administrador
+              - column:
+                  name: leida
+              - column:
+                  name: creado_en
+
+      rollback:
+        - dropIndex:
+            tableName: notificacion
+            indexName: idx_notificacion_administrador_leida
+        - dropIndex:
+            tableName: notificacion
+            indexName: idx_notificacion_visitante_leida
+        - dropIndex:
+            tableName: moderacion
+            indexName: idx_moderacion_administrador_fecha
+        - dropIndex:
+            tableName: moderacion
+            indexName: idx_moderacion_objeto
+        - dropIndex:
+            tableName: reporte_comentario
+            indexName: idx_reporte_comentario_visitante
+        - dropIndex:
+            tableName: reporte_comentario
+            indexName: idx_reporte_comentario_estado_fecha
+        - dropIndex:
+            tableName: comentario
+            indexName: idx_comentario_estado_fecha
+        - dropIndex:
+            tableName: comentario
+            indexName: idx_comentario_visitante
+        - dropIndex:
+            tableName: comentario
+            indexName: idx_comentario_publicacion_fecha
+        - dropIndex:
+            tableName: publicacion
+            indexName: idx_publicacion_estado_fecha
+        - dropIndex:
+            tableName: publicacion
+            indexName: idx_publicacion_visitante
+        - dropIndex:
+            tableName: publicacion
+            indexName: idx_publicacion_destino
+
+  - changeSet:
+      id: 007-04-indices-registro-trazabilidad
+      author: proyecto_viajo
+      comment: "Índices para solicitudes, validaciones y auditoría"
+      changes:
+        - createIndex:
+            tableName: solicitud_registro
+            indexName: idx_solicitud_registro_estado_fecha
+            columns:
+              - column:
+                  name: id_estado_registro
+              - column:
+                  name: fecha_creacion
+
+        - createIndex:
+            tableName: solicitud_registro
+            indexName: idx_solicitud_registro_correo
+            columns:
+              - column:
+                  name: correo
+
+        - createIndex:
+            tableName: error_validacion
+            indexName: idx_error_validacion_solicitud
+            columns:
+              - column:
+                  name: id_solicitud_registro
+
+        - createIndex:
+            tableName: confirmacion_registro
+            indexName: idx_confirmacion_registro_solicitud
+            columns:
+              - column:
+                  name: id_solicitud_registro
+
+        - createIndex:
+            tableName: confirmacion_registro
+            indexName: idx_confirmacion_registro_estado_expira
+            columns:
+              - column:
+                  name: estado
+              - column:
+                  name: expira_en
+
+        - createIndex:
+            tableName: incidente_tecnico
+            indexName: idx_incidente_tecnico_resuelto_fecha
+            columns:
+              - column:
+                  name: resuelto
+              - column:
+                  name: ocurrido_en
+
+        - createIndex:
+            tableName: bitacora_proceso
+            indexName: idx_bitacora_proceso_solicitud_fecha
+            columns:
+              - column:
+                  name: id_solicitud_registro
+              - column:
+                  name: creado_en
+
+        - createIndex:
+            tableName: bitacora_proceso
+            indexName: idx_bitacora_proceso_nivel_fecha
+            columns:
+              - column:
+                  name: nivel
+              - column:
+                  name: creado_en
+
+      rollback:
+        - dropIndex:
+            tableName: bitacora_proceso
+            indexName: idx_bitacora_proceso_nivel_fecha
+        - dropIndex:
+            tableName: bitacora_proceso
+            indexName: idx_bitacora_proceso_solicitud_fecha
+        - dropIndex:
+            tableName: incidente_tecnico
+            indexName: idx_incidente_tecnico_resuelto_fecha
+        - dropIndex:
+            tableName: confirmacion_registro
+            indexName: idx_confirmacion_registro_estado_expira
+        - dropIndex:
+            tableName: confirmacion_registro
+            indexName: idx_confirmacion_registro_solicitud
+        - dropIndex:
+            tableName: error_validacion
+            indexName: idx_error_validacion_solicitud
+        - dropIndex:
+            tableName: solicitud_registro
+            indexName: idx_solicitud_registro_correo
+        - dropIndex:
+            tableName: solicitud_registro
+            indexName: idx_solicitud_registro_estado_fecha
