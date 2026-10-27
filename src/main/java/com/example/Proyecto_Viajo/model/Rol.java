@@ -1,15 +1,10 @@
+
 package com.example.Proyecto_Viajo.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "rol")
-@Getter
-@Setter
-@NoArgsConstructor
 public class Rol {
 
   @Id
@@ -22,4 +17,31 @@ public class Rol {
 
   @Column(name = "descripcion", length = 150)
   private String descripcion;
+
+  public Rol() {
+  }
+
+  public Integer getIdRol() {
+    return idRol;
+  }
+
+  public void setIdRol(Integer idRol) {
+    this.idRol = idRol;
+  }
+
+  public String getNombreRol() {
+    return nombreRol;
+  }
+
+  public void setNombreRol(String nombreRol) {
+    this.nombreRol = nombreRol;
+  }
+
+  public String getDescripcion() {
+    return descripcion;
+  }
+
+  public void setDescripcion(String descripcion) {
+    this.descripcion = descripcion;
+  }
 }

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class RolProcesoDAOImpl
-    extends BaseDAOImpl<RolProceso, Long>
+    extends BaseDAOImpl<RolProceso, String>
     implements RolProcesoDAO {
 
   public RolProcesoDAOImpl(RolProcesoRepository repository) {
