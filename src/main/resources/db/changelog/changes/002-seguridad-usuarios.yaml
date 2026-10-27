@@ -154,7 +154,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: estado
-                  type: CHAR(1)
+                  type: VARCHAR(1)
                   defaultValue: A
                   constraints:
                     nullable: false
