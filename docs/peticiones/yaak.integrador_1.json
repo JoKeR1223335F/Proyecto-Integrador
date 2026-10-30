@@ -1,7 +1,7 @@
 {
   "yaakVersion": "2026.9.0",
   "yaakSchema": 4,
-  "timestamp": "2026-10-30T22:54:24.919482411",
+  "timestamp": "2026-10-30T23:10:50.235400493",
   "resources": {
     "workspaces": [
       {
@@ -27,6 +27,48 @@
     ],
     "environments": [],
     "folders": [
+      {
+        "model": "folder",
+        "id": "fl_ozRb2BuXwm",
+        "createdAt": "2026-10-30T23:07:32.479647117",
+        "updatedAt": "2026-10-30T23:07:38.328154917",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "DestinoImagen",
+        "sortPriority": 8000.002,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "folder",
         "id": "fl_qYQNEH7wR3",
@@ -659,6 +701,195 @@
       }
     ],
     "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_8pVWMUGwdA",
+        "createdAt": "2026-10-30T23:07:32.480389544",
+        "updatedAt": "2026-10-30T23:08:27.558756073",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ozRb2BuXwm",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/destino-imagenes/destino/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_2NvVWBVMmu",
+        "createdAt": "2026-10-30T23:07:32.480323965",
+        "updatedAt": "2026-10-30T23:08:32.821887138",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ozRb2BuXwm",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/destino-imagenes/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_jrHXGByq6P",
+        "createdAt": "2026-10-30T23:07:32.480245505",
+        "updatedAt": "2026-10-30T23:10:03.710841374",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ozRb2BuXwm",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "form": [
+            {
+              "enabled": true,
+              "file": "/home/joker/Pictures/screenshot-20260926-191027.png",
+              "id": "6zkcVPuPYi",
+              "name": "archivo"
+            },
+            {
+              "enabled": true,
+              "id": "zH3UMa40wE",
+              "name": "idDestino",
+              "value": "2"
+            },
+            {
+              "enabled": true,
+              "id": "KVBKYK0dRY",
+              "name": "textoAlternativo",
+              "value": "Vista de la laguna de Huacachina"
+            },
+            {
+              "enabled": true,
+              "id": "zngHWu0C7D",
+              "name": "esPrincipal",
+              "value": "true"
+            },
+            {
+              "enabled": true,
+              "id": "mTjCYD32gc",
+              "name": "orden",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "id": "wq8TsyBRcd",
+              "name": "",
+              "value": ""
+            }
+          ]
+        },
+        "bodyType": "multipart/form-data",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "multipart/form-data",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/destino-imagenes/subir",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "http_request",
         "id": "rq_JJnKwn29UF",
