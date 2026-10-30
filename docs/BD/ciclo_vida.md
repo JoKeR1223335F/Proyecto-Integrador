@@ -48,11 +48,11 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 | N.º | Entidad Java | Dependencia | Estado | Responsable |
 |---:|---|---|---|---|
-| 17 | `Publicacion` | `Destino` | Pendiente | Por asignar |
-| 18 | `Comentario` | `Usuario`, `Publicacion`, `EstadoModeracion` | Pendiente | Por asignar |
-| 19 | `ReporteComentario` | `Comentario`, `Usuario`, `MotivoRechazo` | Pendiente | Por asignar |
-| 20 | `Moderacion` | `Comentario`, `Administrador`, `MotivoRechazo` | Pendiente | Por asignar |
-| 21 | `Notificacion` | `Moderacion`, `Usuario` | Pendiente | Por asignar |
+| 17 | `Publicacion` | `Destino` | En proceso | Cristofer |
+| 18 | `Comentario` | `Usuario`, `Publicacion`, `EstadoModeracion` | En proceso | Cristofer |
+| 19 | `ReporteComentario` | `Comentario`, `Usuario`, `MotivoRechazo` | En proceso | Cristofer |
+| 20 | `Moderacion` | `Comentario`, `Administrador`, `MotivoRechazo` | En proceso | Cristofer |
+| 21 | `Notificacion` | `Moderacion`, `Usuario` | En proceso | Cristofer |
 
 ### Fase 6 — Registro y trazabilidad del proceso
 
