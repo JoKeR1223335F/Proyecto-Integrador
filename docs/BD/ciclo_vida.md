@@ -26,8 +26,8 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 | N.º | Entidad Java | Dependencia | Estado | Responsable |
 |---:|---|---|---|---|
 | 9 | `ReglaValidacion` | `CampoFormulario` | Pendiente | Por asignar |
-| 10 | `Administrador` | `Rol` | En proceso | Cristofer |
-| 11 | `Usuario` | `Rol` | Pendiente | Por asignar |
+| 10 | `Administrador` | `Rol` | **Completado** | Cristofer |
+| 11 | `Usuario` | `Rol` | **Completado** | Cristofer |
 
 ### Fase 3 — Visitantes y preferencias
 
