@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class ReglaValidacionDAOImpl
-    extends BaseDAOImpl<ReglaValidacion, Long>
+    extends BaseDAOImpl<ReglaValidacion, String>
     implements ReglaValidacionDAO {
 
   public ReglaValidacionDAOImpl(ReglaValidacionRepository repository) {

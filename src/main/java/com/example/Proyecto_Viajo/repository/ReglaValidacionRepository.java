@@ -5,5 +5,5 @@ import com.example.Proyecto_Viajo.model.ReglaValidacion;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ReglaValidacionRepository
-    extends JpaRepository<ReglaValidacion, Long> {
+    extends JpaRepository<ReglaValidacion, String> {
 }
