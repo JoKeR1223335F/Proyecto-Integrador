@@ -25,7 +25,7 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 | N.º | Entidad Java | Dependencia | Estado | Responsable |
 |---:|---|---|---|---|
-| 9 | `ReglaValidacion` | `CampoFormulario` | Pendiente | Por asignar |
+| 9 | `ReglaValidacion` | `CampoFormulario` | En proceso | Cristofer |
 | 10 | `Administrador` | `Rol` | **Completado** | Cristofer |
 | 11 | `Usuario` | `Rol` | **Completado** | Cristofer |
 
