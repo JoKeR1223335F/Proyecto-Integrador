@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class EstadoRegistroDAOImpl
-    extends BaseDAOImpl<EstadoRegistro, Long>
+    extends BaseDAOImpl<EstadoRegistro, String>
     implements EstadoRegistroDAO {
 
   public EstadoRegistroDAOImpl(EstadoRegistroRepository repository) {

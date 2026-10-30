@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class CategoriaDestinoDAOImpl
-    extends BaseDAOImpl<CategoriaDestino, Long>
+    extends BaseDAOImpl<CategoriaDestino, String>
     implements CategoriaDestinoDAO {
 
   public CategoriaDestinoDAOImpl(CategoriaDestinoRepository repository) {

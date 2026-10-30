@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class EstadoModeracionDAOImpl
-    extends BaseDAOImpl<EstadoModeracion, Long>
+    extends BaseDAOImpl<EstadoModeracion, Integer>
     implements EstadoModeracionDAO {
 
   public EstadoModeracionDAOImpl(EstadoModeracionRepository repository) {

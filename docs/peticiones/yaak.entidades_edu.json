@@ -1,0 +1,1282 @@
+{
+  "yaakVersion": "2026.9.0",
+  "yaakSchema": 4,
+  "timestamp": "2026-10-30T15:32:00.025898",
+  "resources": {
+    "workspaces": [
+      {
+        "model": "workspace",
+        "id": "wk_bXrJWfux9w",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Entidades_Edu",
+        "encryptionKeyChallenge": null,
+        "settingValidateCertificates": true,
+        "settingFollowRedirects": true,
+        "settingRequestTimeout": 0,
+        "settingRequestMessageSize": 67108864,
+        "settingDnsOverrides": [],
+        "settingSendCookies": true,
+        "settingStoreCookies": true,
+        "settingHttpVersion": "auto"
+      }
+    ],
+    "environments": [],
+    "folders": [
+      {
+        "model": "folder",
+        "id": "fl_pPo8JwBx3P",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": null,
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Proyecto_Integrador",
+        "sortPriority": 0.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_a5qrNoJwWo",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_pPo8JwBx3P",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "estados-registro",
+        "sortPriority": 0.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_PklQMVzouk",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_pPo8JwBx3P",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "estados-moderacion",
+        "sortPriority": 1000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_5NsJczOyKL",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_pPo8JwBx3P",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "motivos-rechazo",
+        "sortPriority": 2000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_PO5kZpweTJ",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_pPo8JwBx3P",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "categorias-destino",
+        "sortPriority": 3000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      }
+    ],
+    "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_QR4Nazl8Of",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_a5qrNoJwWo",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/estados-registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_aH4eUCKCIj",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_a5qrNoJwWo",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/estados-registro/EN_CAPTURA",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_JyGf37YorQ",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_a5qrNoJwWo",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"codigo\": \"PRUEBA_EDU\",\n  \"significado\": \"Estado de prueba\",\n  \"accion\": \"Accion de prueba\",\n  \"esFinal\": false\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/estados-registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_kr1zuQ6qfy",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_a5qrNoJwWo",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"codigo\": \"PRUEBA_EDU\",\n  \"significado\": \"Estado de prueba editado\",\n  \"accion\": \"Accion de prueba editada\",\n  \"esFinal\": true\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/estados-registro/PRUEBA_EDU",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_2bgaoNdgaw",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_a5qrNoJwWo",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/estados-registro/PRUEBA_EDU",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_iZizqs5tGi",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PklQMVzouk",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/estados-moderacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Vnr1o8CPt0",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PklQMVzouk",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/estados-moderacion/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_UwCDvJYaFS",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PklQMVzouk",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"nombreEstado\": \"PRUEBA_EDU\",\n  \"descripcion\": \"Estado de prueba\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/estados-moderacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_tnwsRfuRiF",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PklQMVzouk",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idEstado\": 4,\n  \"nombreEstado\": \"PRUEBA_EDU\",\n  \"descripcion\": \"Estado de prueba editado\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/estados-moderacion/4",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_x5aoEWwXYt",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PklQMVzouk",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/estados-moderacion/4",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_ZOXMYHB58m",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_5NsJczOyKL",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/motivos-rechazo",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_PyjsbJ96Hu",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_5NsJczOyKL",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/motivos-rechazo/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_h3k6m8vGTu",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_5NsJczOyKL",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"nombreMotivo\": \"PRUEBA_EDU\",\n  \"descripcion\": \"Motivo de prueba\",\n  \"gravedad\": 1\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/motivos-rechazo",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_tZzXZlDfIj",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_5NsJczOyKL",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idMotivo\": 3,\n  \"nombreMotivo\": \"PRUEBA_EDU\",\n  \"descripcion\": \"Motivo de prueba editado\",\n  \"gravedad\": 2\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/motivos-rechazo/3",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_nuMYB7XRlV",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_5NsJczOyKL",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/motivos-rechazo/3",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_q2dUPoLUoW",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PO5kZpweTJ",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/categorias-destino",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_WX6lRXwewp",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PO5kZpweTJ",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/categorias-destino/natural",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_EGChc52bgL",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PO5kZpweTJ",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"codigo\": \"prueba\",\n  \"descripcion\": \"Categoria de prueba\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/categorias-destino",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_DKjIxqn7qQ",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PO5kZpweTJ",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"codigo\": \"prueba\",\n  \"descripcion\": \"Categoria de prueba editada\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/categorias-destino/prueba",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_r7hjPD1pFO",
+        "createdAt": "2026-10-30T15:32:00.025898",
+        "updatedAt": "2026-10-30T15:32:00.025898",
+        "workspaceId": "wk_bXrJWfux9w",
+        "folderId": "fl_PO5kZpweTJ",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/categorias-destino/prueba",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      }
+    ],
+    "grpcRequests": [],
+    "websocketRequests": []
+  }
+}

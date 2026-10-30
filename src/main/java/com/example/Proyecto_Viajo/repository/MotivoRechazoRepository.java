@@ -5,5 +5,5 @@ import com.example.Proyecto_Viajo.model.MotivoRechazo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface MotivoRechazoRepository
-    extends JpaRepository<MotivoRechazo, Long> {
+    extends JpaRepository<MotivoRechazo, Integer> {
 }
