@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class MotivoRechazoDAOImpl
-    extends BaseDAOImpl<MotivoRechazo, Long>
+    extends BaseDAOImpl<MotivoRechazo, Integer>
     implements MotivoRechazoDAO {
 
   public MotivoRechazoDAOImpl(MotivoRechazoRepository repository) {
