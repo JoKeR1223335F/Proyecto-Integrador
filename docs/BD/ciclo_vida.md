@@ -16,10 +16,10 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 | 2 | `RolProceso` | `rol_proceso` | **Completado** | Cristofer |
 | 3 | `TipoTurismo` | `tipo_turismo` | **Completado** | Cristofer |
 | 4 | `CampoFormulario` | `campo_formulario` | **Completado** | Cristofer |
-| 5 | `EstadoRegistro` | `estado_registro` | Pendiente | Por asignar |
-| 6 | `EstadoModeracion` | `estado_moderacion` | Pendiente | Por asignar |
-| 7 | `MotivoRechazo` | `motivo_rechazo` | Pendiente | Por asignar |
-| 8 | `CategoriaDestino` | `categoria_destino` | Pendiente | Por asignar |
+| 5 | `EstadoRegistro` | `estado_registro` | En progreso | Edu |
+| 6 | `EstadoModeracion` | `estado_moderacion` | En progreso | Edu |
+| 7 | `MotivoRechazo` | `motivo_rechazo` | En progreso | Edu |
+| 8 | `CategoriaDestino` | `categoria_destino` | En progreso | Edu |
 
 ### Fase 2 — Validaciones y seguridad
 
