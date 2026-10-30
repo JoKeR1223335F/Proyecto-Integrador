@@ -14,8 +14,8 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 |---:|---|---|---|---|
 | 1 | `Rol` | `rol` | **Completado** | Cristofer |
 | 2 | `RolProceso` | `rol_proceso` | **Completado** | Cristofer |
-| 3 | `TipoTurismo` | `tipo_turismo` | En proceso | Cristofer |
-| 4 | `CampoFormulario` | `campo_formulario` | Pendiente | Por asignar |
+| 3 | `TipoTurismo` | `tipo_turismo` | **Completado** | Cristofer |
+| 4 | `CampoFormulario` | `campo_formulario` | En proceso | Cristofer |
 | 5 | `EstadoRegistro` | `estado_registro` | Pendiente | Por asignar |
 | 6 | `EstadoModeracion` | `estado_moderacion` | Pendiente | Por asignar |
 | 7 | `MotivoRechazo` | `motivo_rechazo` | Pendiente | Por asignar |
