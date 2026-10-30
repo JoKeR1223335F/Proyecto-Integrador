@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class CampoFormularioDAOImpl
-    extends BaseDAOImpl<CampoFormulario, Long>
+    extends BaseDAOImpl<CampoFormulario, String>
     implements CampoFormularioDAO {
 
   public CampoFormularioDAOImpl(CampoFormularioRepository repository) {
