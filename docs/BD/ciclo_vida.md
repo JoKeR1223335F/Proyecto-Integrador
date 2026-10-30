@@ -40,9 +40,9 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 | N.º | Entidad Java | Dependencia | Estado | Responsable |
 |---:|---|---|---|---|
-| 14 | `Destino` | `CategoriaDestino`, `Administrador` | En proceso | Cristofer |
-| 15 | `DestinoImagen` | `Destino` | En proceso | Cristofer |
-| 16 | `SolicitudOperacion` | `Destino`, `Administrador` | En proceso | Cristofer |
+| 14 | `Destino` | `CategoriaDestino`, `Administrador` |  **Completado** | Cristofer |
+| 15 | `DestinoImagen` | `Destino` | **Completado** | Cristofer |
+| 16 | `SolicitudOperacion` | `Destino`, `Administrador` | **Completado** | Cristofer |
 
 ### Fase 5 — Publicaciones, comentarios y moderación
 
