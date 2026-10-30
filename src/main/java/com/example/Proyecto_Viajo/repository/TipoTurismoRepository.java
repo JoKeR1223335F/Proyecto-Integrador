@@ -5,5 +5,5 @@ import com.example.Proyecto_Viajo.model.TipoTurismo;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface TipoTurismoRepository
-    extends JpaRepository<TipoTurismo, Long> {
+    extends JpaRepository<TipoTurismo, String> {
 }

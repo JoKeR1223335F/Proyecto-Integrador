@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public class TipoTurismoDAOImpl
-    extends BaseDAOImpl<TipoTurismo, Long>
+    extends BaseDAOImpl<TipoTurismo, String>
     implements TipoTurismoDAO {
 
   public TipoTurismoDAOImpl(TipoTurismoRepository repository) {

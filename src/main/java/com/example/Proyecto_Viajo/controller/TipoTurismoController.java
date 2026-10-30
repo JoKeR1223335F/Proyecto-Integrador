@@ -1,9 +1,17 @@
 package com.example.Proyecto_Viajo.controller;
 
-/**
- * TipoTurismoController
- */
-public class TipoTurismoController {
+import com.example.Proyecto_Viajo.controller.shared.CrudController;
+import com.example.Proyecto_Viajo.model.TipoTurismo;
+import com.example.Proyecto_Viajo.repository.TipoTurismoRepository;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-  // HAcemos nuestros avances etc/
+@RestController
+@RequestMapping("/api/tipos-turismo")
+public class TipoTurismoController
+    extends CrudController<TipoTurismo, String> {
+
+  public TipoTurismoController(TipoTurismoRepository repository) {
+    super(repository);
+  }
 }
