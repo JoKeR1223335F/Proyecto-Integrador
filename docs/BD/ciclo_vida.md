@@ -33,8 +33,8 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 | N.º | Entidad Java | Dependencia | Estado | Responsable |
 |---:|---|---|---|---|
-| 12 | `Visitante` | `Usuario`, `TipoTurismo` | Pendiente | Por asignar |
-| 13 | `PreferenciaVisitante` | `Visitante`, `TipoTurismo` | Pendiente | Por asignar |
+| 12 | `Visitante` | `Usuario`, `TipoTurismo` | En proceso | Cristofer |
+| 13 | `PreferenciaVisitante` | `Visitante`, `TipoTurismo` | En proceso | Cristofer |
 
 ### Fase 4 — Gestión de destinos turísticos
 

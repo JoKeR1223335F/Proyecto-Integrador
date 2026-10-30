@@ -1,7 +1,7 @@
 {
   "yaakVersion": "2026.9.0",
   "yaakSchema": 4,
-  "timestamp": "2026-10-30T14:20:13.120733722",
+  "timestamp": "2026-10-30T15:12:33.656822729",
   "resources": {
     "workspaces": [
       {
@@ -27,6 +27,174 @@
     ],
     "environments": [],
     "folders": [
+      {
+        "model": "folder",
+        "id": "fl_9taqcbqh9m",
+        "createdAt": "2026-10-30T15:07:46.194845226",
+        "updatedAt": "2026-10-30T15:07:56.405220034",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "ReglaValidacion",
+        "sortPriority": -1793130080976.996,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_QwRVZoMpCC",
+        "createdAt": "2026-10-30T14:55:18.383171854",
+        "updatedAt": "2026-10-30T14:55:22.336755927",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Usuario",
+        "sortPriority": -1793130080976.997,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_FkNr3QzSYz",
+        "createdAt": "2026-10-30T14:48:56.464357020",
+        "updatedAt": "2026-10-30T14:49:02.530700555",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Administrador",
+        "sortPriority": -1793130080976.998,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_EFjiJp9Nvn",
+        "createdAt": "2026-10-30T14:36:19.260392985",
+        "updatedAt": "2026-10-30T14:36:31.340499386",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Campo-Formulario",
+        "sortPriority": -1793130080976.998,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "folder",
         "id": "fl_UK6Z8oCfyC",
@@ -197,6 +365,1035 @@
       }
     ],
     "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_jYKgGNmsxN",
+        "createdAt": "2026-10-30T15:07:46.195449473",
+        "updatedAt": "2026-10-30T15:08:25.609167925",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_9taqcbqh9m",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/reglas-validacion/nombre",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_pWodgk78Bo",
+        "createdAt": "2026-10-30T15:07:46.195322834",
+        "updatedAt": "2026-10-30T15:08:18.951399573",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_9taqcbqh9m",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"campo\": \"nombre\",\n    \"regla\": \"Longitud entre 5 y 100 caracteres\",\n    \"mensaje\": \"El nombre debe contener entre 5 y 100 caracteres\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/reglas-validacion/nombre",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_JmgcpXYWE7",
+        "createdAt": "2026-10-30T15:07:46.195251394",
+        "updatedAt": "2026-10-30T15:07:59.887941093",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_9taqcbqh9m",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"campo\": \"nombre\",\n    \"regla\": \"Longitud entre 3 y 100 caracteres\",\n    \"mensaje\": \"El nombre debe tener entre 3 y 100 caracteres\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/reglas-validacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_eWKDe6ktvi",
+        "createdAt": "2026-10-30T15:07:46.195173055",
+        "updatedAt": "2026-10-30T15:08:12.892117946",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_9taqcbqh9m",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/reglas-validacion/nombre",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_8ch76tHEPi",
+        "createdAt": "2026-10-30T15:07:46.195087275",
+        "updatedAt": "2026-10-30T15:08:07.514804429",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_9taqcbqh9m",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/reglas-validacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_LWwDfoPvF5",
+        "createdAt": "2026-10-30T14:55:18.383733721",
+        "updatedAt": "2026-10-30T14:55:54.764006679",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_QwRVZoMpCC",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/usuarios",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_RDBUb4Q5WL",
+        "createdAt": "2026-10-30T14:55:18.383667631",
+        "updatedAt": "2026-10-30T14:56:01.165501005",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_QwRVZoMpCC",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/usuarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_dc3mrQfomJ",
+        "createdAt": "2026-10-30T14:55:18.383593732",
+        "updatedAt": "2026-10-30T14:55:48.446172274",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_QwRVZoMpCC",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"rol\": {\n        \"idRol\": 2\n    },\n    \"nombres\": \"Juan Carlos\",\n    \"apellidos\": \"Perez Garcia\",\n    \"correo\": \"juan.perez@gmail.com\",\n    \"usuario\": \"jperez\",\n    \"contrasenaHash\": \"HASH_DE_CONTRASENA\",\n    \"estado\": \"A\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/usuarios",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_p3WEyZZkbD",
+        "createdAt": "2026-10-30T14:55:18.383513302",
+        "updatedAt": "2026-10-30T14:56:09.023591652",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_QwRVZoMpCC",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"idUsuario\": 1,\n    \"rol\": {\n        \"idRol\": 2\n    },\n    \"nombres\": \"Juan Carlos\",\n    \"apellidos\": \"Perez Rodriguez\",\n    \"correo\": \"juan.actualizado@gmail.com\",\n    \"usuario\": \"jperez\",\n    \"contrasenaHash\": \"NUEVO_HASH_DE_CONTRASENA\",\n    \"estado\": \"A\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/usuarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_rMnLdrroKi",
+        "createdAt": "2026-10-30T14:55:18.383403963",
+        "updatedAt": "2026-10-30T14:56:16.012905498",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_QwRVZoMpCC",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/usuarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_AaX8JgNx9q",
+        "createdAt": "2026-10-30T14:48:56.464861687",
+        "updatedAt": "2026-10-30T14:49:58.559320407",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FkNr3QzSYz",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/administradores/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_2UtQuwWZoH",
+        "createdAt": "2026-10-30T14:48:56.464795257",
+        "updatedAt": "2026-10-30T14:51:32.036545952",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FkNr3QzSYz",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"idAdministrador\": 1,\n    \"rol\": {\n        \"idRol\": 6\n    },\n    \"usuario\": \"admin_viajo\",\n    \"correo\": \"administrador@viajo.com\",\n    \"contrasenaHash\": \"NUEVO_HASH_DE_CONTRASENA\",\n    \"nombreCompleto\": \"Administrador General\",\n    \"estado\": \"ACTIVO\",\n    \"intentosFallidos\": 0\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/administradores/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_WEaC8UTN69",
+        "createdAt": "2026-10-30T14:48:56.464730768",
+        "updatedAt": "2026-10-30T14:50:50.019288474",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FkNr3QzSYz",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"rol\": {\n        \"idRol\": 1\n    },\n    \"usuario\": \"admin_viajo\",\n    \"correo\": \"admin@viajo.com\",\n    \"contrasenaHash\": \"HASH_DE_CONTRASENA\",\n    \"nombreCompleto\": \"Administrador Principal\",\n    \"estado\": \"ACTIVO\",\n    \"intentosFallidos\": 0\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/administradores",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_NGkJYyqSJz",
+        "createdAt": "2026-10-30T14:48:56.464661078",
+        "updatedAt": "2026-10-30T14:49:27.983433339",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FkNr3QzSYz",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/administradores/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_CRfgnakocY",
+        "createdAt": "2026-10-30T14:48:56.464573828",
+        "updatedAt": "2026-10-30T14:49:14.416129802",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FkNr3QzSYz",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/administradores",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_rLaGgopRLu",
+        "createdAt": "2026-10-30T14:36:19.260887942",
+        "updatedAt": "2026-10-30T14:38:11.118981379",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_EFjiJp9Nvn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/campos-formulario/fecha_nacimiento",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_ZaRWgFdPCb",
+        "createdAt": "2026-10-30T14:36:19.260824902",
+        "updatedAt": "2026-10-30T14:37:56.698490551",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_EFjiJp9Nvn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"codigo\": \"nombre\",\n    \"etiqueta\": \"Nombres y apellidos completos\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/campos-formulario/nombre",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_krtuVmwHci",
+        "createdAt": "2026-10-30T14:36:19.260762683",
+        "updatedAt": "2026-10-30T14:37:44.829581561",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_EFjiJp9Nvn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"codigo\": \"fecha_nacimiento\",\n    \"etiqueta\": \"Fecha de nacimiento\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/campos-formulario",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_JDfAG4wuMj",
+        "createdAt": "2026-10-30T14:36:19.260696733",
+        "updatedAt": "2026-10-30T14:37:22.420707349",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_EFjiJp9Nvn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/campos-formulario/nombre",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_AtiTMbms4e",
+        "createdAt": "2026-10-30T14:36:19.260615864",
+        "updatedAt": "2026-10-30T14:37:15.101739876",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_EFjiJp9Nvn",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/campos-formulario",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "http_request",
         "id": "rq_XWpagxjAt9",
