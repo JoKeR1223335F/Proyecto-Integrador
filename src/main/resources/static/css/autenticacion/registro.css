@@ -1,0 +1,254 @@
+/* =====================================
+   REGISTRO - ESTILOS AISLADOS
+===================================== */
+
+.registro-page {
+  background: #f5f7f6;
+  min-height: 100vh;
+}
+
+/* CONTENEDOR */
+
+.registro-page .registro-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 750px;
+}
+
+/* IMAGEN */
+
+.registro-page .registro-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .65)),
+    url("https://images.unsplash.com/photo-1530789253388-582c481c54b0") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 65px;
+  color: white;
+}
+
+.registro-page .registro-image-content {
+  max-width: 550px;
+}
+
+.registro-page .registro-image-content span {
+  color: #a5d6a7;
+  font-size: .85rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.registro-page .registro-image-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin: 20px 0;
+}
+
+.registro-page .registro-image-content p {
+  color: #eee;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* FORMULARIO */
+
+.registro-page .registro-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 30px;
+}
+
+.registro-page .registro-card {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .06);
+}
+
+.registro-page .registro-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.registro-page .registro-icon {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8f5e9;
+  font-size: 1.7rem;
+  margin-bottom: 12px;
+}
+
+.registro-page .registro-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #263238;
+}
+
+.registro-page .registro-heading p {
+  color: #888;
+  font-size: .9rem;
+}
+
+/* CAMPOS */
+
+.registro-page .registro-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.registro-page .registro-field {
+  margin-bottom: 17px;
+}
+
+.registro-page .registro-field label {
+  display: block;
+  font-weight: 600;
+  font-size: .9rem;
+  margin-bottom: 7px;
+  color: #37474f;
+}
+
+.registro-page .form-control {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  box-shadow: none;
+}
+
+.registro-page .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, .1);
+}
+
+/* CONTRASEÑAS */
+
+.registro-page .registro-password {
+  position: relative;
+}
+
+.registro-page .registro-password input {
+  padding-right: 65px;
+}
+
+.registro-page .registro-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #198754;
+  font-weight: 600;
+  font-size: .85rem;
+}
+
+.registro-page #mensajePassword {
+  display: block;
+  margin-top: 5px;
+  font-size: .8rem;
+}
+
+/* TERMINOS */
+
+.registro-page .registro-terminos {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 20px 0;
+  font-size: .83rem;
+  color: #666;
+}
+
+.registro-page .registro-terminos input {
+  margin-top: 4px;
+  accent-color: #198754;
+}
+
+/* BOTON */
+
+.registro-page .btn-registro {
+  width: 100%;
+  padding: 13px;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.registro-page .btn-registro:hover {
+  background: #146c43;
+}
+
+/* LOGIN */
+
+.registro-page .registro-login {
+  text-align: center;
+  margin-top: 25px;
+  font-size: .9rem;
+}
+
+.registro-page .registro-login p {
+  color: #777;
+}
+
+.registro-page .registro-login a {
+  color: #198754;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.registro-page .registro-login a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .registro-page .registro-container {
+    grid-template-columns: 1fr;
+  }
+
+  .registro-page .registro-image {
+    min-height: 280px;
+    padding: 40px;
+  }
+
+  .registro-page .registro-image-content h1 {
+    font-size: 2.2rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .registro-page .registro-card {
+    padding: 25px 18px;
+  }
+
+  .registro-page .registro-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .registro-page .registro-image-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .registro-page .registro-form-section {
+    padding: 30px 15px;
+  }
+
+}

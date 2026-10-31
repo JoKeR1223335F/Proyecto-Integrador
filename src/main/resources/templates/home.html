@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('Viajo | Descubre nuevos destinos', '/css/home.css')}">
+</head>
+
+<body>
+
+  <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <span class="tag">EXPLORA · DESCUBRE · VIAJA</span>
+
+        <h1>
+          El mundo está lleno
+          de lugares por descubrir.
+        </h1>
+
+        <p>
+          Encuentra destinos increíbles, comparte experiencias
+          y comienza a planificar tu próxima aventura.
+        </p>
+
+        <div class="hero-buttons">
+          <a th:href="@{/destinos}" class="btn-primary">
+            Explorar destinos
+          </a>
+
+          <a th:href="@{/publicaciones}" class="btn-secondary">
+            Ver experiencias
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="categories">
+
+      <div class="section-heading">
+        <span>INSPÍRATE</span>
+        <h2>¿Qué tipo de viaje buscas?</h2>
+        <p>Encuentra experiencias para cada estilo de viajero.</p>
+      </div>
+
+      <div class="category-grid">
+
+        <article class="category-card">
+          <div class="category-icon">🏖️</div>
+          <h3>Playas</h3>
+          <p>Descubre paraísos junto al mar.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">⛰️</div>
+          <h3>Aventura</h3>
+          <p>Explora montañas y nuevos caminos.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">🏛️</div>
+          <h3>Cultura</h3>
+          <p>Conoce lugares llenos de historia.</p>
+        </article>
+
+        <article class="category-card">
+          <div class="category-icon">🌳</div>
+          <h3>Naturaleza</h3>
+          <p>Conecta con paisajes extraordinarios.</p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="destinations">
+
+      <div class="section-heading">
+        <span>DESCUBRE</span>
+        <h2>Destinos que te esperan</h2>
+        <p>Tu próxima aventura podría comenzar aquí.</p>
+      </div>
+
+      <div id="destinos-container" class="destination-grid">
+        <p>Cargando destinos...</p>
+      </div>
+
+    </section>
+
+    <section class="community">
+
+      <h2>Comparte tus experiencias de viaje</h2>
+
+      <p>
+        Inspira a otros viajeros compartiendo tus historias,
+        fotografías y recomendaciones.
+      </p>
+
+      <a th:href="@{/registro}" class="btn-primary">
+        Únete a nuestra comunidad
+      </a>
+
+    </section>
+
+  </main>
+
+  <div th:replace="~{fragments/footer :: footer}"></div>
+
+  <script th:src="@{/js/home.js}"></script>
+
+</body>
+
+</html>

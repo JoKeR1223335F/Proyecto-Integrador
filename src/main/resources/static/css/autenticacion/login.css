@@ -1,0 +1,257 @@
+/* =====================================
+   LOGIN - ESTILOS AISLADOS
+===================================== */
+
+.login-page {
+  background: #f5f7f6;
+  min-height: 100vh;
+}
+
+/* CONTENEDOR */
+
+.login-page .login-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 650px;
+}
+
+/* IMAGEN */
+
+.login-page .login-image {
+  background:
+    linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .65)),
+    url("https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  padding: 70px;
+  color: white;
+}
+
+.login-page .login-image-content {
+  max-width: 550px;
+}
+
+.login-page .login-image-content span {
+  color: #a5d6a7;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.login-page .login-image-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+.login-page .login-image-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #eee;
+}
+
+/* FORMULARIO */
+
+.login-page .login-form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+.login-page .login-card {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, .06);
+}
+
+.login-page .login-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.login-page .login-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  background: #e8f5e9;
+  color: #198754;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.login-page .login-heading h2 {
+  font-weight: 800;
+  color: #263238;
+}
+
+.login-page .login-heading p {
+  color: #888;
+  font-size: .95rem;
+}
+
+/* CAMPOS */
+
+.login-page .form-group {
+  margin-bottom: 22px;
+}
+
+.login-page .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #37474f;
+}
+
+.login-page .form-control {
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  box-shadow: none;
+}
+
+.login-page .form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, .1);
+}
+
+/* CONTRASEÑA */
+
+.login-page .password-container {
+  position: relative;
+}
+
+.login-page .password-container input {
+  padding-right: 65px;
+}
+
+.login-page .password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #198754;
+  font-weight: 600;
+}
+
+/* OPCIONES */
+
+.login-page .login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: .85rem;
+  margin-bottom: 25px;
+}
+
+.login-page .remember-option {
+  color: #666;
+}
+
+.login-page .login-options a {
+  color: #198754;
+  text-decoration: none;
+}
+
+.login-page .login-options a:hover {
+  text-decoration: underline;
+}
+
+/* BOTONES */
+
+.login-page .btn-login,
+.login-page .btn-register {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  text-align: center;
+  border-radius: 9px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.login-page .btn-login {
+  background: #198754;
+  border: none;
+  color: white;
+}
+
+.login-page .btn-login:hover {
+  background: #146c43;
+}
+
+.login-page .btn-register {
+  background: white;
+  border: 1px solid #198754;
+  color: #198754;
+}
+
+.login-page .btn-register:hover {
+  background: #e8f5e9;
+}
+
+/* DIVISOR */
+
+.login-page .login-divider {
+  text-align: center;
+  margin: 25px 0;
+  color: #999;
+  font-size: .9rem;
+}
+
+/* TERMINOS */
+
+.login-page .login-terms {
+  text-align: center;
+  color: #aaa;
+  font-size: .75rem;
+  margin: 25px 0 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .login-page .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .login-page .login-image {
+    min-height: 300px;
+    padding: 40px;
+  }
+
+  .login-page .login-image-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-page .login-card {
+    padding: 25px 20px;
+  }
+
+  .login-page .login-image {
+    min-height: 260px;
+  }
+
+  .login-page .login-image-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-page .login-form-section {
+    padding: 30px 15px;
+  }
+}

@@ -1,0 +1,123 @@
+/* ========================================
+   NAVBAR GLOBAL
+======================================== */
+
+.navbar {
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #222;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #16a085;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #16a085;
+}
+
+/* Acciones del navbar */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-actions .login {
+  color: #333;
+}
+
+.nav-actions .login:hover {
+  color: #16a085;
+}
+
+.nav-actions .register {
+  background-color: #16a085;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.nav-actions .register:hover {
+  background-color: #13856f;
+}
+
+/* ========================================
+   FOOTER GLOBAL
+======================================== */
+
+.footer {
+  background-color: #202a35;
+  color: #ffffff;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.footer .logo {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  color: #cbd0d5;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   RESPONSIVE GLOBAL
+======================================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-actions {
+    justify-content: center;
+  }
+
+}

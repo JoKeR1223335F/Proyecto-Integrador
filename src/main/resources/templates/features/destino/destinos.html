@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{fragments/head :: head('Viajo | Destinos', '/css/destinos.css')}">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+  <!-- HERO -->
+  <header class="destinos-hero">
+    <div class="hero-overlay">
+      <div class="container text-center">
+        <h1>Descubre nuevos destinos</h1>
+        <p>
+          Explora lugares increíbles y encuentra tu próxima aventura.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="container py-5">
+
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Explora nuestros destinos</h2>
+      <p class="text-muted">
+        Encuentra lugares únicos para tu próximo viaje.
+      </p>
+    </div>
+
+    <!-- BUSCADOR -->
+    <div class="row mb-4">
+      <div class="col-md-8 mx-auto">
+        <input type="text" id="buscador" class="form-control form-control-lg"
+          placeholder="Buscar destino por nombre...">
+      </div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" id="filtrosCategorias">
+    </div>
+
+    <!-- DESTINOS -->
+    <div class="row g-4" id="contenedorDestinos">
+
+      <div class="col-12 text-center" id="cargando">
+        <div class="spinner-border text-primary"></div>
+        <p class="mt-2">Cargando destinos...</p>
+      </div>
+
+    </div>
+
+    <!-- SIN RESULTADOS -->
+    <div id="sinResultados" class="text-center d-none py-5">
+      <h4>No se encontraron destinos</h4>
+      <p class="text-muted">
+        Intenta con otra búsqueda.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- MODAL DETALLES -->
+  <div class="modal fade" id="modalDestino" tabindex="-1">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo"></h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal">
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <img id="modalImagen" class="img-fluid rounded mb-3 w-100" style="max-height:350px; object-fit:cover;"
+            alt="Imagen del destino">
+
+          <p id="modalDescripcion"></p>
+
+          <p id="modalUbicacion" class="text-muted">
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div th:replace="~{fragments/footer :: footer}"></div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script th:src="@{/js/destinos.js}"></script>
+
+</body>
+
+</html>

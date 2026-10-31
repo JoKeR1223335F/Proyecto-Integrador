@@ -1,0 +1,24 @@
+<header th:fragment="navbar" class="navbar">
+
+  <a th:href="@{/}" class="logo">
+    VIAJO<span>.</span>
+  </a>
+
+  <nav>
+    <a th:href="@{/}">Inicio</a>
+    <a th:href="@{/destinos}">Destinos</a>
+    <a th:href="@{/publicaciones}">Publicaciones</a>
+    <a th:href="@{/nosotros}">Nosotros</a>
+  </nav>
+
+  <div class="nav-actions">
+    <a th:href="@{/login}" class="login">
+      Iniciar sesión
+    </a>
+
+    <a th:href="@{/registro}" class="register">
+      Registrarse
+    </a>
+  </div>
+
+</header>

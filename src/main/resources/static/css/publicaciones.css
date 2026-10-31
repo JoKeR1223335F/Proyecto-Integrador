@@ -1,0 +1,411 @@
+/* ========================================
+   NAVBAR GLOBAL
+======================================== */
+
+.navbar {
+  padding: 18px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #222;
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.logo span {
+  color: #16a085;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #16a085;
+}
+
+/* Acciones del navbar */
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.nav-actions .login {
+  color: #333;
+}
+
+.nav-actions .login:hover {
+  color: #16a085;
+}
+
+.nav-actions .register {
+  background-color: #16a085;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.nav-actions .register:hover {
+  background-color: #13856f;
+}
+
+/* ========================================
+   FOOTER GLOBAL
+======================================== */
+
+.footer {
+  background-color: #202a35;
+  color: #ffffff;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.footer .logo {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.footer p {
+  color: #cbd0d5;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* ========================================
+   RESPONSIVE GLOBAL
+======================================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .nav-actions {
+    justify-content: center;
+  }
+
+}
+
+
+/* =========================================
+   PUBLICACIONES - ESTILOS AISLADOS
+========================================= */
+
+.publicaciones-page {
+  background: #f7f8fa;
+  color: #263238;
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.publicaciones-page .publicaciones-hero {
+  min-height: 350px;
+  background:
+    linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .65)),
+    url("https://images.unsplash.com/photo-1464822759023-fed622ff2c3b") center/cover no-repeat;
+}
+
+.publicaciones-page .publicaciones-hero-overlay {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.publicaciones-page .publicaciones-tag {
+  display: inline-block;
+  font-size: .8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #a5d6a7;
+}
+
+.publicaciones-page .publicaciones-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.publicaciones-page .publicaciones-hero p {
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 25px;
+}
+
+/* BOTONES */
+
+.publicaciones-page .btn-publicaciones-primary {
+  display: inline-block;
+  background: #198754;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.publicaciones-page .btn-publicaciones-primary:hover {
+  background: #146c43;
+  transform: translateY(-3px);
+}
+
+/* ENCABEZADO */
+
+.publicaciones-page .publicaciones-heading span {
+  color: #198754;
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+
+.publicaciones-page .publicaciones-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.publicaciones-page .publicaciones-heading p {
+  color: #777;
+}
+
+/* TOOLBAR */
+
+.publicaciones-page .publicaciones-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.publicaciones-page .publicaciones-search {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+}
+
+.publicaciones-page .publicaciones-search input {
+  width: 100%;
+  padding: 13px 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.publicaciones-page .publicaciones-search input:focus {
+  border-color: #198754;
+}
+
+.publicaciones-page .publicaciones-search button {
+  border: none;
+  background: #198754;
+  color: white;
+  padding: 0 25px;
+  border-radius: 0 8px 8px 0;
+}
+
+.publicaciones-page .btn-crear-publicacion {
+  background: #263238;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.publicaciones-page .btn-crear-publicacion:hover {
+  background: #198754;
+}
+
+/* FILTROS */
+
+.publicaciones-page .publicaciones-filtros {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.publicaciones-page .filtro-publicacion {
+  border: 1px solid #ddd;
+  background: white;
+  color: #555;
+  padding: 9px 20px;
+  border-radius: 25px;
+  transition: .3s;
+}
+
+.publicaciones-page .filtro-publicacion.active,
+.publicaciones-page .filtro-publicacion:hover {
+  background: #198754;
+  color: white;
+  border-color: #198754;
+}
+
+/* GRID */
+
+.publicaciones-page .publicaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.publicaciones-page .publicacion-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
+  transition: .3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.publicaciones-page .publicacion-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+}
+
+.publicaciones-page .publicacion-card-body {
+  padding: 22px;
+  flex: 1;
+}
+
+.publicaciones-page .publicacion-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.publicaciones-page .publicacion-contenido {
+  color: #777;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.publicaciones-page .publicacion-meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: #888;
+  font-size: .85rem;
+  margin-top: 20px;
+}
+
+.publicaciones-page .publicacion-autor {
+  font-weight: 600;
+  color: #198754;
+}
+
+.publicaciones-page .btn-ver-publicacion {
+  display: inline-block;
+  margin-top: 18px;
+  color: #198754;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.publicaciones-page .btn-ver-publicacion:hover {
+  color: #146c43;
+}
+
+/* ESTADOS */
+
+.publicaciones-page .publicaciones-loading,
+.publicaciones-page #sinPublicaciones {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 20px;
+  color: #777;
+}
+
+.publicaciones-page .modal-publicacion-autor {
+  color: #198754;
+  font-weight: 700;
+}
+
+.publicaciones-page .modal-publicacion-fecha {
+  color: #999;
+  font-size: .85rem;
+  margin-top: 5px;
+}
+
+.publicaciones-page .modal-publicacion-contenido {
+  white-space: pre-wrap;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .publicaciones-page .publicaciones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .publicaciones-page .publicaciones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publicaciones-page .publicaciones-hero h1 {
+    font-size: 2rem;
+  }
+
+  .publicaciones-page .publicaciones-toolbar {
+    flex-direction: column;
+  }
+
+  .publicaciones-page .publicaciones-search {
+    max-width: 100%;
+  }
+
+  .publicaciones-page .btn-crear-publicacion {
+    text-align: center;
+  }
+}
