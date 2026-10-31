@@ -76,26 +76,90 @@
 }
 
 /* ========================================
-   FOOTER GLOBAL
+   FOOTER GLOBAL - VIAJO
 ======================================== */
 
-.footer {
-  background-color: #202a35;
+.global-footer {
+  width: 100%;
+  padding: 45px 20px 25px;
+  background: #17212b;
   color: #ffffff;
   text-align: center;
-  padding: 35px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
 }
 
-.footer .logo {
+/* LOGO */
+
+.global-logo {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
   color: #ffffff;
-  display: inline-block;
-  margin-bottom: 12px;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
 }
 
-.footer p {
-  color: #cbd0d5;
-  margin-bottom: 8px;
+.global-logo span {
+  color: #20b486;
+}
+
+.global-logo:hover {
+  color: #20b486;
+}
+
+/* DESCRIPCIÓN */
+
+.global-footer-description {
+  margin: 0;
+  max-width: 500px;
+
+  color: #cbd5df;
   font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* COPYRIGHT */
+
+.global-footer-copyright {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 15px 0 0;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #94a3b8;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .global-footer {
+    padding: 35px 18px 20px;
+  }
+
+  .global-logo {
+    font-size: 1.7rem;
+  }
+
+  .global-footer-description {
+    font-size: 0.9rem;
+  }
+
+  .global-footer-copyright {
+    font-size: 0.8rem;
+  }
+
 }
 
 /* ========================================
