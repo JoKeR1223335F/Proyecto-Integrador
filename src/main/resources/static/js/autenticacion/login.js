@@ -1,80 +1,38 @@
-javascript
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    const API_URL = "/api/auth/login";
+    const API_AUTENTICAR = "/api/usuarios/autenticar";
 
     const formulario = document.getElementById("loginForm");
     const correo = document.getElementById("correo");
     const contrasena = document.getElementById("contrasena");
-
-    const mensajeLogin = document.getElementById("mensajeLogin");
-    const btnLogin = document.getElementById("btnLogin");
-    const togglePassword = document.getElementById("togglePassword");
+    const boton = document.getElementById("btnLogin");
+    const mensaje = document.getElementById("mensajeLogin");
 
     // Mostrar / ocultar contraseña
-    togglePassword.addEventListener("click", () => {
+    const toggle = document.getElementById("togglePassword");
 
-        const visible = contrasena.type === "password";
+    toggle.addEventListener("click", () => {
 
-        contrasena.type = visible ? "text" : "password";
+        const mostrar = contrasena.type === "password";
 
-        togglePassword.textContent = visible ? "Ocultar" : "Ver";
+        contrasena.type = mostrar ? "text" : "password";
+        toggle.textContent = mostrar ? "Ocultar" : "Ver";
 
     });
 
-    // Mostrar mensajes
-    function mostrarMensaje(mensaje, tipo) {
+    function mostrarMensaje(texto, tipo) {
 
-        mensajeLogin.className = `alert alert-${tipo}`;
-        mensajeLogin.textContent = mensaje;
-
-    }
-
-    // Redirección según rol
-    function redirigirSegunRol(usuario) {
-
-        const rol = usuario.rol;
-
-        if (!rol) {
-            mostrarMensaje("La cuenta no tiene un rol asignado.", "danger");
-            btnLogin.disabled = false;
-            btnLogin.textContent = "Iniciar sesión";
-            return;
-        }
-
-        const nombreRol = String(rol.nombre || "").toUpperCase();
-        const idRol = Number(rol.idRol);
-
-        if (idRol === 2 || nombreRol === "VISITANTE") {
-
-            window.location.href = "/usuario";
-
-        } else if (nombreRol === "ADMINISTRADOR") {
-
-            window.location.href = "/admin";
-
-        } else {
-
-            mostrarMensaje(
-                "No existe una ruta asignada para este tipo de usuario.",
-                "warning"
-            );
-
-            btnLogin.disabled = false;
-            btnLogin.textContent = "Iniciar sesión";
-
-        }
+        mensaje.className = `alert alert-${tipo}`;
+        mensaje.textContent = texto;
 
     }
 
-    // LOGIN
     formulario.addEventListener("submit", async (event) => {
 
         event.preventDefault();
 
-        if (!formulario.reportValidity()) {
-            return;
-        }
+        if (!formulario.reportValidity()) return;
 
         const datos = {
             correo: correo.value.trim(),
@@ -83,12 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
 
-            btnLogin.disabled = true;
-            btnLogin.textContent = "Verificando...";
+            boton.disabled = true;
+            boton.textContent = "Iniciando sesión...";
 
-            mensajeLogin.classList.add("d-none");
-
-            const respuesta = await fetch(API_URL, {
+            const respuesta = await fetch(API_AUTENTICAR, {
 
                 method: "POST",
 
@@ -96,43 +52,49 @@ document.addEventListener("DOMContentLoaded", () => {
                     "Content-Type": "application/json"
                 },
 
-                credentials: "same-origin",
-
                 body: JSON.stringify(datos)
 
             });
 
-            const resultado = await respuesta.json().catch(() => null);
+            const resultado = await respuesta.json();
 
             if (!respuesta.ok) {
 
                 throw new Error(
-                    resultado?.message ||
-                    resultado?.mensaje ||
-                    "Correo o contraseña incorrectos."
+                    typeof resultado === "string"
+                        ? resultado
+                        : resultado?.mensaje ||
+                          resultado?.message ||
+                          "Correo o contraseña incorrectos."
                 );
 
             }
 
-            // El backend debe devolver el usuario autenticado
-            if (!resultado || !resultado.rol) {
+            const idUsuario = resultado.idUsuario;
 
-                throw new Error(
-                    "El servidor no devolvió los datos del usuario autenticado."
-                );
-
+            if (!idUsuario) {
+                throw new Error("No se recibió el identificador del usuario.");
             }
 
-            mostrarMensaje("¡Bienvenido a Viajo!", "success");
+            // Guardar sesión del usuario
+            sessionStorage.setItem("idUsuario", idUsuario);
 
-            redirigirSegunRol(resultado);
+            mostrarMensaje(
+                "¡Bienvenido! Redirigiendo a tu perfil...",
+                "success"
+            );
+
+            // Redirigir compartiendo el ID
+            window.location.href = `/usuario?id=${encodeURIComponent(idUsuario)}`;
 
         } catch (error) {
 
+            console.error("Error al iniciar sesión:", error);
+
             mostrarMensaje(error.message, "danger");
 
-            btnLogin.disabled = false;
-            btnLogin.textContent = "Iniciar sesión";
+            boton.disabled = false;
+            boton.textContent = "Iniciar sesión";
 
         }
 

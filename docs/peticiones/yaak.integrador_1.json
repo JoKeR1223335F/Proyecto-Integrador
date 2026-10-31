@@ -1,7 +1,7 @@
 {
   "yaakVersion": "2026.9.0",
   "yaakSchema": 4,
-  "timestamp": "2026-10-31T14:37:21.745781686",
+  "timestamp": "2026-10-31T16:29:10.196044334",
   "resources": {
     "workspaces": [
       {
@@ -27,6 +27,48 @@
     ],
     "environments": [],
     "folders": [
+      {
+        "model": "folder",
+        "id": "fl_FZ7BHD2sNy",
+        "createdAt": "2026-10-31T15:23:37.941014472",
+        "updatedAt": "2026-10-31T15:23:37.941015042",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_QwRVZoMpCC",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "login",
+        "sortPriority": -1793460217940.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "folder",
         "id": "fl_dSst3AkRMM",
@@ -1499,6 +1541,110 @@
       }
     ],
     "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_UhKNw5GdDx",
+        "createdAt": "2026-10-31T15:38:45.583294484",
+        "updatedAt": "2026-10-31T15:46:12.648894856",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FZ7BHD2sNy",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idRol\": 2,\n  \"nombres\": \"Juan Carlos\",\n  \"apellidos\": \"Perez Garcia\",\n  \"correo\": \"cristoferavp_123456@Outlook.es\",\n  \"usuario\": \"Joker\",\n  \"contrasena\": \"MiPassword123\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/usuarios/registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_wLZSjNLhd5",
+        "createdAt": "2026-10-31T15:24:33.148880697",
+        "updatedAt": "2026-10-31T15:47:32.129247708",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FZ7BHD2sNy",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n    \"correo\": \"cristoferavp_123456@Outlook.es\",\n    \"contrasena\": \"MiPassword123\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/usuarios/autenticar",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "http_request",
         "id": "rq_He7Ahbogpf",
@@ -5349,13 +5495,13 @@
         "model": "http_request",
         "id": "rq_jPQjpz2bXk",
         "createdAt": "2026-10-30T18:10:16.145289732",
-        "updatedAt": "2026-10-30T18:12:58.803723882",
+        "updatedAt": "2026-10-31T15:56:20.586773517",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_rP3V8fgprR",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "{\n    \"visitante\": {\n        \"idVisitante\": 3\n    },\n    \"tipoTurismo\": {\n        \"codigo\": \"naturaleza\"\n    },\n    \"activa\": true\n}"
+          "text": "{\n    \"visitante\": {\n        \"idVisitante\": 5\n    },\n    \"tipoTurismo\": {\n        \"codigo\": \"naturaleza\"\n    },\n    \"activa\": true\n}"
         },
         "bodyType": "application/json",
         "description": "",
@@ -5407,7 +5553,7 @@
         "model": "http_request",
         "id": "rq_FHyexzfUha",
         "createdAt": "2026-10-30T18:10:16.145211955",
-        "updatedAt": "2026-10-30T18:11:01.896050254",
+        "updatedAt": "2026-10-31T15:05:38.734828774",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_rP3V8fgprR",
         "authentication": {},
@@ -5426,7 +5572,7 @@
         "method": "GET",
         "name": "",
         "sortPriority": 1000.0,
-        "url": "http://localhost:8080/api/preferencias-visitante/1",
+        "url": "http://localhost:8080/api/preferencias-visitante/7",
         "urlParameters": [],
         "settingSendCookies": {
           "enabled": false,
@@ -5607,13 +5753,13 @@
         "model": "http_request",
         "id": "rq_Z6djpTaRKg",
         "createdAt": "2026-10-30T17:57:38.025431146",
-        "updatedAt": "2026-10-30T18:01:35.549953091",
+        "updatedAt": "2026-10-31T15:55:42.357815961",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_RW8eC9AuEU",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "{\n    \"usuario\": {\n        \"idUsuario\": 2\n    },\n    \"tipoTurismo\": {\n        \"codigo\": \"cultural\"\n    },\n    \"telefono\": \"+51987654321\",\n    \"paisResidencia\": \"Peru\",\n    \"fechaNacimiento\": \"1998-05-15\"\n}"
+          "text": "{\n    \"usuario\": {\n        \"idUsuario\": 3\n    },\n    \"tipoTurismo\": {\n        \"codigo\": \"cultural\"\n    },\n    \"telefono\": \"+51987654321\",\n    \"paisResidencia\": \"Peru\",\n    \"fechaNacimiento\": \"1998-05-15\"\n}"
         },
         "bodyType": "application/json",
         "description": "",
@@ -7111,7 +7257,7 @@
         "model": "http_request",
         "id": "rq_RDBUb4Q5WL",
         "createdAt": "2026-10-30T14:55:18.383667631",
-        "updatedAt": "2026-10-30T14:56:01.165501005",
+        "updatedAt": "2026-10-31T16:18:58.765844699",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_QwRVZoMpCC",
         "authentication": {},
@@ -7130,7 +7276,7 @@
         "method": "GET",
         "name": "",
         "sortPriority": 1000.0,
-        "url": "http://localhost:8080/api/usuarios/1",
+        "url": "http://localhost:8080/api/usuarios/3",
         "urlParameters": [],
         "settingSendCookies": {
           "enabled": false,
@@ -7161,13 +7307,13 @@
         "model": "http_request",
         "id": "rq_dc3mrQfomJ",
         "createdAt": "2026-10-30T14:55:18.383593732",
-        "updatedAt": "2026-10-30T14:55:48.446172274",
+        "updatedAt": "2026-10-31T15:23:31.283797179",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_QwRVZoMpCC",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "{\n    \"rol\": {\n        \"idRol\": 2\n    },\n    \"nombres\": \"Juan Carlos\",\n    \"apellidos\": \"Perez Garcia\",\n    \"correo\": \"juan.perez@gmail.com\",\n    \"usuario\": \"jperez\",\n    \"contrasenaHash\": \"HASH_DE_CONTRASENA\",\n    \"estado\": \"A\"\n}"
+          "text": "{\n    \"rol\": {\n        \"idRol\": 2\n    },\n    \"nombres\": \"Juan aCarlos\",\n    \"apellidos\": \"Perez Garcia\",\n    \"correo\": \"juan.perez@gmail.com\",\n    \"usuario\": \"jperez\",\n    \"contrasenaHash\": \"HASH_DE_CONTRASENA\",\n    \"estado\": \"A\"\n}"
         },
         "bodyType": "application/json",
         "description": "",
@@ -7219,13 +7365,13 @@
         "model": "http_request",
         "id": "rq_p3WEyZZkbD",
         "createdAt": "2026-10-30T14:55:18.383513302",
-        "updatedAt": "2026-10-30T14:56:09.023591652",
+        "updatedAt": "2026-10-31T15:02:47.213393221",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_QwRVZoMpCC",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "{\n    \"idUsuario\": 1,\n    \"rol\": {\n        \"idRol\": 2\n    },\n    \"nombres\": \"Juan Carlos\",\n    \"apellidos\": \"Perez Rodriguez\",\n    \"correo\": \"juan.actualizado@gmail.com\",\n    \"usuario\": \"jperez\",\n    \"contrasenaHash\": \"NUEVO_HASH_DE_CONTRASENA\",\n    \"estado\": \"A\"\n}"
+          "text": "{\n    \"idUsuario\": 2,\n    \"rol\": {\n        \"idRol\": 2\n    },\n    \"nombres\": \"Juan Carlos\",\n    \"apellidos\": \"Perez Rodriguez\",\n    \"correo\": \"juan.actualizado@gmail.com\",\n    \"usuario\": \"jperez\",\n    \"contrasenaHash\": \"NUEVO_HASH_DE_CONTRASENA\",\n    \"estado\": \"A\"\n}"
         },
         "bodyType": "application/json",
         "description": "",
@@ -7246,7 +7392,7 @@
         "method": "PUT",
         "name": "",
         "sortPriority": 3000.0,
-        "url": "http://localhost:8080/api/usuarios/1",
+        "url": "http://localhost:8080/api/usuarios/2",
         "urlParameters": [],
         "settingSendCookies": {
           "enabled": false,
@@ -7277,7 +7423,7 @@
         "model": "http_request",
         "id": "rq_rMnLdrroKi",
         "createdAt": "2026-10-30T14:55:18.383403963",
-        "updatedAt": "2026-10-31T04:52:50.912661623",
+        "updatedAt": "2026-10-31T15:46:45.094271529",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_QwRVZoMpCC",
         "authentication": {},

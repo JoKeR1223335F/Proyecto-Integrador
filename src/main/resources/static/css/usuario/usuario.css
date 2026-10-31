@@ -1,0 +1,374 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
+.usuario-page {
+  background: #f5f7fb;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.usuario-page main {
+  width: 100%;
+}
+
+/* ========================================
+   ENCABEZADO DEL PERFIL
+======================================== */
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 30px;
+  min-width: 0;
+}
+
+.perfil-avatar {
+  width: 85px;
+  height: 85px;
+  min-width: 85px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1769aa, #42a5f5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .12);
+}
+
+.perfil-header>div:last-child {
+  min-width: 0;
+}
+
+.perfil-header h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 5px 0;
+  color: #172b4d;
+  overflow-wrap: anywhere;
+}
+
+.perfil-header p {
+  margin-bottom: 0;
+}
+
+.perfil-tag {
+  color: #1672bd;
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* ========================================
+   TARJETAS
+======================================== */
+
+.usuario-card {
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .05);
+  overflow-wrap: anywhere;
+}
+
+.usuario-card h3 {
+  font-weight: 750;
+  font-size: 1.25rem;
+  color: #172b4d;
+  margin-bottom: 22px;
+}
+
+.usuario-card h4 {
+  overflow-wrap: anywhere;
+}
+
+/* ========================================
+   ENCABEZADO DE TARJETAS
+======================================== */
+
+.usuario-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.usuario-card-header h3 {
+  margin: 0;
+}
+
+/* ========================================
+   DATOS DEL PERFIL
+======================================== */
+
+.perfil-datos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px 20px;
+}
+
+.perfil-datos div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.perfil-datos span {
+  color: #8492a6;
+  font-size: .85rem;
+}
+
+.perfil-datos strong {
+  color: #253858;
+  font-size: .98rem;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* ========================================
+   PREFERENCIAS TURÍSTICAS
+======================================== */
+
+.preferencia-card {
+  text-align: center;
+}
+
+.preferencia-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.preferencia-card h3 {
+  margin-bottom: 15px;
+}
+
+.preferencia-card h4 {
+  font-size: 1.35rem;
+  font-weight: 750;
+  color: #1769aa;
+  margin-bottom: 12px;
+}
+
+.preferencia-card p {
+  line-height: 1.7;
+}
+
+.preferencia-card .badge {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* ========================================
+   FORMULARIOS
+======================================== */
+
+.formulario-perfil,
+.preferencias-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formulario-perfil {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, .06);
+}
+
+.formulario-perfil h1,
+.preferencias-container h1 {
+  font-weight: 800;
+  color: #172b4d;
+}
+
+.formulario-perfil .form-label,
+.preferencias-container .form-label {
+  font-weight: 650;
+  color: #344563;
+}
+
+.usuario-page .form-control,
+.usuario-page .form-select {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+
+.usuario-page .form-control:focus,
+.usuario-page .form-select:focus {
+  border-color: #2684ff;
+  box-shadow: 0 0 0 3px rgba(38, 132, 255, .12);
+}
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.usuario-page .btn {
+  border-radius: 10px;
+  padding: 11px 20px;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.usuario-page .btn-primary {
+  background: #1769aa;
+  border-color: #1769aa;
+}
+
+.usuario-page .btn-primary:hover {
+  background: #10558d;
+  border-color: #10558d;
+}
+
+.usuario-page .btn-outline-primary {
+  color: #1769aa;
+  border-color: #1769aa;
+}
+
+.usuario-page .btn-outline-primary:hover {
+  background: #1769aa;
+  color: #ffffff;
+}
+
+/* ========================================
+   PÁGINA DE PREFERENCIAS
+======================================== */
+
+.preferencias-container {
+  max-width: 650px;
+}
+
+.preferencias-container .usuario-card {
+  padding: 35px;
+}
+
+/* ========================================
+   TABLETS
+======================================== */
+
+@media (max-width: 991.98px) {
+
+  .usuario-card {
+    padding: 25px;
+  }
+
+  .perfil-header h1 {
+    font-size: 1.7rem;
+  }
+
+}
+
+/* ========================================
+   MÓVILES
+======================================== */
+
+@media (max-width: 767.98px) {
+
+  .usuario-page main {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+  .perfil-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .perfil-avatar {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+    font-size: 27px;
+    flex-shrink: 0;
+  }
+
+  .perfil-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .perfil-header .perfil-tag {
+    font-size: .7rem;
+  }
+
+  .perfil-datos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .usuario-card {
+    padding: 22px;
+    border-radius: 15px;
+  }
+
+  .usuario-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .usuario-card-header .btn {
+    width: 100%;
+  }
+
+  .preferencia-card {
+    text-align: center;
+  }
+
+  .formulario-perfil {
+    padding: 25px 20px;
+  }
+
+  .preferencias-container .usuario-card {
+    padding: 25px 20px;
+  }
+
+}
+
+/* ========================================
+   MÓVILES PEQUEÑOS
+======================================== */
+
+@media (max-width: 400px) {
+
+  .perfil-header {
+    gap: 12px;
+  }
+
+  .perfil-avatar {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    font-size: 23px;
+  }
+
+  .perfil-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .usuario-card {
+    padding: 18px;
+  }
+
+  .usuario-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .usuario-page .btn {
+    padding: 10px 14px;
+    font-size: .9rem;
+  }
+
+}

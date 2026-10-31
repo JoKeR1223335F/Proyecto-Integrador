@@ -1,6 +1,8 @@
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    const API_URL = "http://localhost:8080/api/usuarios";
+    const API_REGISTRO = "http://localhost:8080/api/usuarios/registro";
+    const API_AUTENTICAR = "http://localhost:8080/api/usuarios/autenticar";
 
     const formulario = document.getElementById("registroForm");
     const mensajeRegistro = document.getElementById("mensajeRegistro");
@@ -17,22 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const input = document.getElementById(boton.dataset.target);
 
-            if (input.type === "password") {
-                input.type = "text";
-                boton.textContent = "Ocultar";
-            } else {
-                input.type = "password";
-                boton.textContent = "Ver";
-            }
+            input.type = input.type === "password" ? "text" : "password";
+
+            boton.textContent =
+                input.type === "password" ? "Ver" : "Ocultar";
 
         });
 
     });
 
-    // Validar coincidencia de contraseñas
-    confirmarContrasena.addEventListener("input", validarPassword);
-    contrasena.addEventListener("input", validarPassword);
-
+    // Validar contraseñas
     function validarPassword() {
 
         if (!confirmarContrasena.value) {
@@ -40,19 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
             return false;
         }
 
-        if (contrasena.value !== confirmarContrasena.value) {
+        const coinciden = contrasena.value === confirmarContrasena.value;
 
-            mensajePassword.textContent = "Las contraseñas no coinciden.";
-            mensajePassword.style.color = "red";
+        mensajePassword.textContent = coinciden
+            ? "Las contraseñas coinciden."
+            : "Las contraseñas no coinciden.";
 
-            return false;
-        }
+        mensajePassword.style.color = coinciden ? "green" : "red";
 
-        mensajePassword.textContent = "Las contraseñas coinciden.";
-        mensajePassword.style.color = "green";
-
-        return true;
+        return coinciden;
     }
+
+    confirmarContrasena.addEventListener("input", validarPassword);
+    contrasena.addEventListener("input", validarPassword);
 
     // Mostrar mensajes
     function mostrarMensaje(texto, tipo) {
@@ -62,30 +58,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    // REGISTRO
+    // Convertir respuesta a JSON de forma segura
+    async function leerRespuesta(respuesta) {
+
+        const texto = await respuesta.text();
+
+        if (!texto) return null;
+
+        try {
+            return JSON.parse(texto);
+        } catch {
+            return texto;
+        }
+    }
+
+    // REGISTRAR Y AUTENTICAR
     formulario.addEventListener("submit", async (event) => {
 
         event.preventDefault();
 
-        if (!formulario.reportValidity()) {
-            return;
-        }
+        if (!formulario.reportValidity()) return;
 
         if (!validarPassword()) {
-
-            mostrarMensaje(
-                "Las contraseñas no coinciden.",
-                "danger"
-            );
-
+            mostrarMensaje("Las contraseñas no coinciden.", "danger");
             return;
         }
 
-        const datos = {
+        const datosRegistro = {
 
-            rol: {
-                idRol: 2
-            },
+            idRol: 2,
 
             nombres: document.getElementById("nombres").value.trim(),
 
@@ -95,9 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             usuario: document.getElementById("usuario").value.trim(),
 
-            contrasenaHash: contrasena.value,
-
-            estado: "A"
+            contrasena: contrasena.value
 
         };
 
@@ -108,7 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             mensajeRegistro.classList.add("d-none");
 
-            const respuesta = await fetch(API_URL, {
+            // PASO 1: REGISTRAR USUARIO
+            const respuestaRegistro = await fetch(API_REGISTRO, {
 
                 method: "POST",
 
@@ -116,39 +116,93 @@ document.addEventListener("DOMContentLoaded", () => {
                     "Content-Type": "application/json"
                 },
 
-                body: JSON.stringify(datos)
+                body: JSON.stringify(datosRegistro)
 
             });
 
-            const resultado = await respuesta.json().catch(() => null);
+            const resultadoRegistro = await leerRespuesta(respuestaRegistro);
 
-            if (!respuesta.ok) {
+            if (!respuestaRegistro.ok) {
 
                 throw new Error(
-                    resultado?.message ||
-                    resultado?.mensaje ||
-                    "No fue posible crear la cuenta."
+                    resultadoRegistro?.message ||
+                    resultadoRegistro?.mensaje ||
+                    resultadoRegistro ||
+                    "No fue posible registrar el usuario."
                 );
 
             }
 
             mostrarMensaje(
-                "¡Cuenta creada correctamente! Redirigiendo al inicio de sesión...",
+                "Cuenta creada correctamente. Iniciando sesión...",
                 "success"
             );
 
-            formulario.reset();
+            // PASO 2: AUTENTICAR USUARIO
+            const respuestaLogin = await fetch(API_AUTENTICAR, {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify({
+
+                    correo: datosRegistro.correo,
+
+                    contrasena: datosRegistro.contrasena
+
+                })
+
+            });
+
+            const resultadoLogin = await leerRespuesta(respuestaLogin);
+
+            if (!respuestaLogin.ok) {
+
+                throw new Error(
+                    resultadoLogin?.message ||
+                    resultadoLogin?.mensaje ||
+                    resultadoLogin ||
+                    "La cuenta se creó, pero no fue posible iniciar sesión."
+                );
+
+            }
+
+            // PASO 3: OBTENER ID DEL USUARIO
+            const idUsuario = resultadoLogin?.idUsuario;
+
+            if (!idUsuario) {
+                throw new Error(
+                    "No se recibió el identificador del usuario."
+                );
+            }
+
+            // PASO 4: GUARDAR ID Y REDIRIGIR
+            sessionStorage.setItem("idUsuario", idUsuario);
+
+            mostrarMensaje(
+                "¡Bienvenido a Viajo! Redirigiendo...",
+                "success"
+            );
 
             setTimeout(() => {
-                window.location.href = "/login";
-            }, 1800);
+
+                window.location.href = "/usuario";
+
+            }, 1200);
 
         } catch (error) {
+
+            console.error("Error en el registro:", error);
 
             mostrarMensaje(
                 error.message || "Error al conectar con el servidor.",
                 "danger"
             );
+
+        } finally {
 
             btnRegistro.disabled = false;
             btnRegistro.textContent = "Crear mi cuenta";
