@@ -1,7 +1,7 @@
 {
   "yaakVersion": "2026.9.0",
   "yaakSchema": 4,
-  "timestamp": "2026-10-30T23:10:50.235400493",
+  "timestamp": "2026-10-31T01:47:34.926297677",
   "resources": {
     "workspaces": [
       {
@@ -27,6 +27,468 @@
     ],
     "environments": [],
     "folders": [
+      {
+        "model": "folder",
+        "id": "fl_FvSGnQevFS",
+        "createdAt": "2026-10-31T01:43:08.947330750",
+        "updatedAt": "2026-10-31T01:43:15.884246818",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "BitacoraProceso",
+        "sortPriority": 8000.007000000001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_ZA8ykaaG6V",
+        "createdAt": "2026-10-31T01:38:19.511000924",
+        "updatedAt": "2026-10-31T01:38:28.791904842",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "IncidenteTecnico",
+        "sortPriority": 8000.006000000001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_NCTaT6kRZS",
+        "createdAt": "2026-10-31T01:24:26.928029738",
+        "updatedAt": "2026-10-31T01:24:34.793355564",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "ConfirmacionRegistro",
+        "sortPriority": 8000.005000000001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_Hgrk7wiuNt",
+        "createdAt": "2026-10-31T00:58:57.927220792",
+        "updatedAt": "2026-10-31T00:59:15.225946819",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Error-Validacion",
+        "sortPriority": 8000.004000000001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_VKcsdBLJeg",
+        "createdAt": "2026-10-31T00:49:04.257409065",
+        "updatedAt": "2026-10-31T00:49:17.856787298",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "SolicitudRegistro",
+        "sortPriority": 8000.003000000001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_z9FyHrkw3J",
+        "createdAt": "2026-10-31T00:30:15.790744564",
+        "updatedAt": "2026-10-31T00:30:24.906638886",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Notificacion",
+        "sortPriority": 8000.003000000001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_yZ5Sn9cgqs",
+        "createdAt": "2026-10-31T00:24:09.171410340",
+        "updatedAt": "2026-10-31T00:24:15.456164213",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Moderacion",
+        "sortPriority": 8000.002,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_b5pkPsqiu9",
+        "createdAt": "2026-10-31T00:06:16.590239199",
+        "updatedAt": "2026-10-31T00:06:23.196323163",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "ReporteComentario",
+        "sortPriority": 8000.002,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_qH23BFiKcY",
+        "createdAt": "2026-10-30T23:54:13.145228673",
+        "updatedAt": "2026-10-30T23:54:17.817767872",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Comentario",
+        "sortPriority": 8000.002,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_myUySaUUUR",
+        "createdAt": "2026-10-30T23:43:07.238511083",
+        "updatedAt": "2026-10-30T23:43:12.271059761",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Publicacion",
+        "sortPriority": 8000.001,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_Kt2AJNjDqY",
+        "createdAt": "2026-10-30T23:15:50.956706517",
+        "updatedAt": "2026-10-30T23:16:00.637638284",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "SolicitudOperacion",
+        "sortPriority": 8000.002,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "folder",
         "id": "fl_ozRb2BuXwm",
@@ -703,6 +1165,2874 @@
     "httpRequests": [
       {
         "model": "http_request",
+        "id": "rq_BW5QKKqvRs",
+        "createdAt": "2026-10-31T01:43:08.947837077",
+        "updatedAt": "2026-10-31T01:45:53.340407896",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FvSGnQevFS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/bitacora-procesos/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_wGTDNcPBMg",
+        "createdAt": "2026-10-31T01:43:08.947774347",
+        "updatedAt": "2026-10-31T01:45:46.341654211",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FvSGnQevFS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"proceso\": \"REGISTRO_USUARIO\",\n  \"evento\": \"SOLICITUD_VALIDADA\",\n  \"nivel\": \"INFO\",\n  \"descripcion\": \"La solicitud fue validada correctamente\",\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2\n  },\n  \"usuario\": {\n    \"idUsuario\": 2\n  },\n  \"metadatos\": {\n    \"origen\": \"WEB\",\n    \"resultado\": \"EXITOSO\"\n  }\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/bitacora-procesos/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_bJTxcrmhEa",
+        "createdAt": "2026-10-31T01:43:08.947707958",
+        "updatedAt": "2026-10-31T01:44:37.644686422",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FvSGnQevFS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"proceso\": \"REGISTRO_USUARIO\",\n  \"evento\": \"SOLICITUD_CREADA\",\n  \"nivel\": \"INFO\",\n  \"descripcion\": \"Se creó una nueva solicitud de registro\",\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2\n  },\n  \"usuario\": {\n    \"idUsuario\": 2\n  },\n  \"metadatos\": {\n    \"origen\": \"WEB\",\n    \"ip\": \"192.168.1.10\",\n    \"accion\": \"CREAR_SOLICITUD\"\n  }\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/bitacora-procesos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_ojcp7zCiAo",
+        "createdAt": "2026-10-31T01:43:08.947638798",
+        "updatedAt": "2026-10-31T01:44:50.813198263",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FvSGnQevFS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/bitacora-procesos/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Af53Rdigw7",
+        "createdAt": "2026-10-31T01:43:08.947555118",
+        "updatedAt": "2026-10-31T01:43:33.115488695",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_FvSGnQevFS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/bitacora-procesos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_t9knAQwbhK",
+        "createdAt": "2026-10-31T01:38:19.511613741",
+        "updatedAt": "2026-10-31T01:38:47.765923012",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ZA8ykaaG6V",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/incidentes-tecnicos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_tyfU7tBAZf",
+        "createdAt": "2026-10-31T01:38:19.511552671",
+        "updatedAt": "2026-10-31T01:38:54.895884684",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ZA8ykaaG6V",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/incidentes-tecnicos/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_fssNcZ5NNA",
+        "createdAt": "2026-10-31T01:38:19.511486311",
+        "updatedAt": "2026-10-31T01:38:38.964633381",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ZA8ykaaG6V",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2\n  },\n  \"codigo\": \"ERROR_ENVIO_CORREO\",\n  \"mensaje\": \"No se pudo enviar el correo de confirmación\",\n  \"detalleTecnico\": \"SMTP connection timeout\",\n  \"resuelto\": false\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/incidentes-tecnicos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_pPCxQfKPKX",
+        "createdAt": "2026-10-31T01:38:19.511402762",
+        "updatedAt": "2026-10-31T01:38:59.548410929",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ZA8ykaaG6V",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idIncidente\": 1,\n  \"codigo\": \"ERROR_CORREO_ACTUALIZADO\",\n  \"mensaje\": \"Problema actualizado en el servicio de correo\",\n  \"detalleTecnico\": \"Timeout en el servidor SMTP\",\n  \"resuelto\": false\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/incidentes-tecnicos/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_7XfeNXRXUD",
+        "createdAt": "2026-10-31T01:38:19.511311782",
+        "updatedAt": "2026-10-31T01:39:04.756606809",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ZA8ykaaG6V",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/incidentes-tecnicos/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_9wrqoNvuQ4",
+        "createdAt": "2026-10-31T01:24:26.928889104",
+        "updatedAt": "2026-10-31T01:28:07.265175749",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_NCTaT6kRZS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/confirmaciones-registro/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_TbMXhenTFK",
+        "createdAt": "2026-10-31T01:24:26.928784275",
+        "updatedAt": "2026-10-31T01:31:22.081235196",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_NCTaT6kRZS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idConfirmacion\": 4,\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2\n  },\n  \"tokenHash\": \"a8f4c9d21e7b5630hashEjemplo\",\n  \"expiraEn\": \"2026-10-31T19:00:00\",\n  \"confirmadaEn\": \"2026-10-30T20:30:00\",\n  \"estado\": \"CONFIRMADA\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/confirmaciones-registro/4",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_GsfTWnK4xg",
+        "createdAt": "2026-10-31T01:24:26.928656155",
+        "updatedAt": "2026-10-31T01:25:33.094683360",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_NCTaT6kRZS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2\n  },\n  \"tokenHash\": \"a8f4c9d21e7b5630hashEjemplo\",\n  \"expiraEn\": \"2026-10-31T19:00:00\",\n  \"estado\": \"PENDIENTE\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/confirmaciones-registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_CsmYuvk4a3",
+        "createdAt": "2026-10-31T01:24:26.928539526",
+        "updatedAt": "2026-10-31T01:25:55.261486164",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_NCTaT6kRZS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/confirmaciones-registro/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_6vjq8ZFMRf",
+        "createdAt": "2026-10-31T01:24:26.928396057",
+        "updatedAt": "2026-10-31T01:25:01.687194871",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_NCTaT6kRZS",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/confirmaciones-registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_vnP6BUi7ML",
+        "createdAt": "2026-10-31T00:58:57.927723580",
+        "updatedAt": "2026-10-31T00:59:42.210473391",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Hgrk7wiuNt",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/errores-validacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_bmwuoezmkH",
+        "createdAt": "2026-10-31T00:58:57.927663320",
+        "updatedAt": "2026-10-31T01:02:37.158081051",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Hgrk7wiuNt",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/errores-validacion/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_QhSnUDhfq7",
+        "createdAt": "2026-10-31T00:58:57.927597620",
+        "updatedAt": "2026-10-31T01:02:04.088522695",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Hgrk7wiuNt",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2\n  },\n  \"campoFormulario\": {\n    \"codigo\": \"correo_electronico\",\n  },\n  \"reglaValidacion\": {\n    \"campo\": \"correo_electronico\",\n  },\n  \"codigoError\": \"CAMPO_OBLIGATORIO\",\n  \"mensaje\": \"El campo nombres es obligatorio.\",\n  \"valorRecibido\": \"\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/errores-validacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_hXgnV2hk3H",
+        "createdAt": "2026-10-31T00:58:57.927522681",
+        "updatedAt": "2026-10-31T01:03:33.107623326",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Hgrk7wiuNt",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"solicitudRegistro\": {\n    \"idSolicitudRegistro\": 2 //Coindicir con la url \n  },\n  \"campoFormulario\": {\n    \"codigo\": \"correo_electronico\",\n  },\n  \"reglaValidacion\": {\n    \"campo\": \"correo_electronico\",\n  },\n  \"codigoError\": \"CORREO_FORMATO_INVALIDO\",\n  \"mensaje\": \"El correo ingresado no cumple con el formato requerido.\",\n  \"valorRecibido\": \"usuario@\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/errores-validacion/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_YBHswyNP8J",
+        "createdAt": "2026-10-31T00:58:57.927439301",
+        "updatedAt": "2026-10-31T01:03:41.235272279",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Hgrk7wiuNt",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/errores-validacion/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_zoDouhHPXF",
+        "createdAt": "2026-10-31T00:49:04.257946582",
+        "updatedAt": "2026-10-31T00:50:19.079824585",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_VKcsdBLJeg",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/solicitudes-registro/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_b9YxKhQJER",
+        "createdAt": "2026-10-31T00:49:04.257882283",
+        "updatedAt": "2026-10-31T00:55:03.873250468",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_VKcsdBLJeg",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"usuario\": {\n    \"idUsuario\": 2\n  },\n  \"estadoRegistro\": {\n    \"codigo\": \"EN_CAPTURA\",\n  },\n  \"correo\": \"usuario@gmail.com\",\n  \"datosEnviados\": {\n    \"nombres\": \"Carlos\",\n    \"apellidos\": \"Ramirez\",\n    \"telefono\": \"987654321\"\n  },\n  \"intentos\": 1,\n  \"observaciones\": \"Solicitud revisada y actualizada.\",\n  \"fechaFinalizacion\": \"2026-10-30T19:30:00\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/solicitudes-registro/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_mpxtEVc6sC",
+        "createdAt": "2026-10-31T00:49:04.257815823",
+        "updatedAt": "2026-10-31T00:54:21.565731104",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_VKcsdBLJeg",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"usuario\": {\n    \"idUsuario\": 2\n  },\n  \"estadoRegistro\": {\n    \"codigo\": \"EN_CAPTURA\",\n  },\n  \"correo\": \"usuario@gmail.com\",\n  \"datosEnviados\": {\n    \"nombres\": \"Carlos\",\n    \"apellidos\": \"Ramirez\",\n    \"telefono\": \"987654321\",\n    \"contrasena\": \"ClaveTemporal123\"\n  },\n  \"intentos\": 0,\n  \"observaciones\": \"Solicitud de registro de nuevo usuario.\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/solicitudes-registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_UWR7RbXXDd",
+        "createdAt": "2026-10-31T00:49:04.257743563",
+        "updatedAt": "2026-10-31T00:49:50.344344192",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_VKcsdBLJeg",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/solicitudes-registro/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_m5qB89NxEs",
+        "createdAt": "2026-10-31T00:49:04.257649504",
+        "updatedAt": "2026-10-31T00:49:35.321701860",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_VKcsdBLJeg",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/solicitudes-registro",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_7yc2fGFNaZ",
+        "createdAt": "2026-10-31T00:30:15.791336110",
+        "updatedAt": "2026-10-31T00:36:57.008650304",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_z9FyHrkw3J",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/notificaciones/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_jspJMYJRtr",
+        "createdAt": "2026-10-31T00:30:15.791260721",
+        "updatedAt": "2026-10-31T00:36:43.793713770",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_z9FyHrkw3J",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"titulo\": \"Nueva respuesta\",\n  \"mensaje\": \"Tu publicación ha recibido un nuevo comentario.\",\n  \"tipo\": \"COMENTARIO\",\n  \"leida\": true,\n  \"leidaEn\": \"2026-10-30T20:00:00\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/notificaciones/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_EjjFwi3Zir",
+        "createdAt": "2026-10-31T00:30:15.791156451",
+        "updatedAt": "2026-10-31T00:33:32.327162550",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_z9FyHrkw3J",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"titulo\": \"Nueva respuesta\",\n  \"mensaje\": \"Tu publicación ha recibido un nuevo comentario.\",\n  \"tipo\": \"COMENTARIO\",\n  \"leida\": false\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/notificaciones",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_pqbWNbiYjR",
+        "createdAt": "2026-10-31T00:30:15.791043282",
+        "updatedAt": "2026-10-31T00:34:04.004494192",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_z9FyHrkw3J",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/notificaciones/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_xkzswbNXio",
+        "createdAt": "2026-10-31T00:30:15.790959392",
+        "updatedAt": "2026-10-31T00:31:54.302305823",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_z9FyHrkw3J",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/notificaciones",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_gXWHibTm6m",
+        "createdAt": "2026-10-31T00:24:09.171954747",
+        "updatedAt": "2026-10-31T00:24:23.608201676",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_yZ5Sn9cgqs",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/moderaciones",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_xSEQ3Rn6Fw",
+        "createdAt": "2026-10-31T00:24:09.171869557",
+        "updatedAt": "2026-10-31T00:25:57.752779737",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_yZ5Sn9cgqs",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/moderaciones/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_wcXpMh2M8t",
+        "createdAt": "2026-10-31T00:24:09.171803578",
+        "updatedAt": "2026-10-31T00:25:18.360457322",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_yZ5Sn9cgqs",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"administrador\": {\n    \"idAdministrador\": 2\n  },\n  \"estadoModeracion\": {\n    \"idEstado\": 2\n  },\n  \"motivoRechazo\": {\n    \"idMotivo\": 1\n  },\n  \"tipoObjeto\": \"PUBLICACION\",\n  \"idObjeto\": 1,\n  \"observaciones\": \"Publicación revisada. Se detectó contenido que incumple las normas.\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/moderaciones",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_YbsfcW5iLL",
+        "createdAt": "2026-10-31T00:24:09.171728168",
+        "updatedAt": "2026-10-31T00:26:31.795789515",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_yZ5Sn9cgqs",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idModeracion\": 2,\n  \"administrador\": {\n    \"idAdministrador\": 2\n  },\n  \"estadoModeracion\": {\n    \"idEstado\": 2\n  },\n  \"motivoRechazo\": {\n    \"idMotivo\": 1\n  },\n  \"tipoObjeto\": \"PUBLICACION\",\n  \"idObjeto\": 1,\n  \"observaciones\": \"Publicación rechazada por incumplimiento de las normas.\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/moderaciones/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_8p6AQRzSCx",
+        "createdAt": "2026-10-31T00:24:09.171644859",
+        "updatedAt": "2026-10-31T00:26:55.108219725",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_yZ5Sn9cgqs",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/moderaciones/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_tKgNL2gKbt",
+        "createdAt": "2026-10-31T00:06:16.590785286",
+        "updatedAt": "2026-10-31T00:07:04.429818557",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_b5pkPsqiu9",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/reportes-comentarios",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Hch2oxSprE",
+        "createdAt": "2026-10-31T00:06:16.590711247",
+        "updatedAt": "2026-10-31T00:15:57.191042762",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_b5pkPsqiu9",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/reportes-comentarios/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_jDHnwFdEF8",
+        "createdAt": "2026-10-31T00:06:16.590643087",
+        "updatedAt": "2026-10-31T00:10:21.876678685",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_b5pkPsqiu9",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"comentario\": {\n    \"idComentario\": 2\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"motivoRechazo\": {\n    \"idMotivo\": 1\n  },\n  \"detalle\": \"El comentario contiene información inapropiada.\",\n  \"estado\": \"PENDIENTE\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/reportes-comentarios",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_tEkWBDcS73",
+        "createdAt": "2026-10-31T00:06:16.590566577",
+        "updatedAt": "2026-10-31T00:19:23.884059992",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_b5pkPsqiu9",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idReporte\": 2,\n  \"comentario\": {\n    \"idComentario\": 2\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"motivoRechazo\": {\n    \"idMotivo\": 1\n  },\n  \"detalle\": \"Reporte revisado por el administrador.\",\n  \"estado\": \"REVISADO\" //REVISADO o DESCARTADO\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/reportes-comentarios/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_jfwGSXhWqa",
+        "createdAt": "2026-10-31T00:06:16.590476888",
+        "updatedAt": "2026-10-31T00:07:20.072226043",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_b5pkPsqiu9",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/reportes-comentarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_qqrC7XSggP",
+        "createdAt": "2026-10-30T23:54:13.145764521",
+        "updatedAt": "2026-10-30T23:54:30.492999916",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qH23BFiKcY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/comentarios",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_cceTsSR3QQ",
+        "createdAt": "2026-10-30T23:54:13.145702941",
+        "updatedAt": "2026-10-30T23:54:35.761020730",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qH23BFiKcY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/comentarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_KxwG4Jvziw",
+        "createdAt": "2026-10-30T23:54:13.145632711",
+        "updatedAt": "2026-10-30T23:57:07.729466701",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qH23BFiKcY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"publicacion\": {\n    \"idPublicacion\": 2\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"contenido\": \"Excelente publicación, gracias por compartir tu experiencia.\",\n  \"estadoModeracion\": {\n    \"idEstado\": 1\n  }\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/comentarios",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Tfurhr94AN",
+        "createdAt": "2026-10-30T23:54:13.145546562",
+        "updatedAt": "2026-10-30T23:59:11.054069408",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qH23BFiKcY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idComentario\": 1,\n  \"publicacion\": {\n    \"idPublicacion\": 2\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"contenido\": \"Excelente publicación, información muy útil.\",\n  \"estadoModeracion\": {\n    \"idEstado\": 1\n  }\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/comentarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_m7fbtxWayT",
+        "createdAt": "2026-10-30T23:54:13.145460392",
+        "updatedAt": "2026-10-30T23:55:00.071098305",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qH23BFiKcY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/comentarios/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_Pcf9upeCWA",
+        "createdAt": "2026-10-30T23:43:07.239052920",
+        "updatedAt": "2026-10-30T23:43:38.695949527",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_myUySaUUUR",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "DELETE",
+        "name": "",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/publicaciones/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_a5yymH2PqZ",
+        "createdAt": "2026-10-30T23:43:07.238988101",
+        "updatedAt": "2026-10-30T23:50:35.972627851",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_myUySaUUUR",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idPublicacion\": 1,\n  \"destino\": {\"idDestino\": 2},\n  \"visitante\": {\"idVisitante\": 3},\n  \"titulo\": \"Huacachina actualizada\",\n  \"contenido\": \"Una experiencia turística inolvidable.\",\n  \"estadoModeracion\": {\"idEstado\": 1},\n  \"publicadaEn\": null\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/publicaciones/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_NnUeW6YfL2",
+        "createdAt": "2026-10-30T23:43:07.238918931",
+        "updatedAt": "2026-10-30T23:50:07.902295662",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_myUySaUUUR",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"destino\": {\"idDestino\": 2},\n  \"visitante\": {\"idVisitante\": 3},\n  \"titulo\": \"Mi experiencia en Huacachina\",\n  \"contenido\": \"Un lugar increíble para visitar.\",\n  \"estadoModeracion\": {\"idEstado\": 1}\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/publicaciones",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_E9yCDtu4Nj",
+        "createdAt": "2026-10-30T23:43:07.238850201",
+        "updatedAt": "2026-10-30T23:43:27.655799156",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_myUySaUUUR",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/publicaciones/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_mcWYYC2uvG",
+        "createdAt": "2026-10-30T23:43:07.238761992",
+        "updatedAt": "2026-10-30T23:43:22.718543702",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_myUySaUUUR",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [],
+        "method": "GET",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/publicaciones",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_yzUcMRRo7B",
+        "createdAt": "2026-10-30T23:19:28.704570418",
+        "updatedAt": "2026-10-30T23:19:37.995567895",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "Rechazadas",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/estado/RECHAZADA",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_vHpQybvcjU",
+        "createdAt": "2026-10-30T23:19:15.144771186",
+        "updatedAt": "2026-10-30T23:19:22.373723461",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "Aprobadas",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/estado/APROBADA",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_SbenhbAhPD",
+        "createdAt": "2026-10-30T23:19:01.512792201",
+        "updatedAt": "2026-10-30T23:19:06.877638375",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "Pendientes",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/estado/PENDIENTE",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_gmcEs4fJ7Y",
+        "createdAt": "2026-10-30T23:18:39.864943716",
+        "updatedAt": "2026-10-30T23:23:16.730215948",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "xEstado",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/estado/RECHAZADA",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_VPadekJciC",
+        "createdAt": "2026-10-30T23:17:56.402316358",
+        "updatedAt": "2026-10-30T23:22:22.380042904",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idAdministrador\": 2,\n  \"estado\": \"RECHAZADA\",\n  \"observaciones\": \"La información del destino está incompleta.\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "Rechazar Solicitud",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/2/resolver",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_cweUdJEQwu",
+        "createdAt": "2026-10-30T23:15:50.957382623",
+        "updatedAt": "2026-10-30T23:16:48.815345966",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "Todas",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_x68oyZmaLn",
+        "createdAt": "2026-10-30T23:15:50.957316233",
+        "updatedAt": "2026-10-30T23:17:33.324096915",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "xId",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/1",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_nWQ3qnaDXx",
+        "createdAt": "2026-10-30T23:15:50.957242064",
+        "updatedAt": "2026-10-30T23:20:22.964799623",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idDestino\": 2,\n  \"tipoOperacion\": \"PUBLICAR\",\n  \"motivo\": \"Solicito la publicación de este destino turístico.\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "Crear",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_CJNDg9DhPc",
+        "createdAt": "2026-10-30T23:15:50.957168864",
+        "updatedAt": "2026-10-30T23:21:43.022797941",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idAdministrador\": 2,\n  \"estado\": \"APROBADA\",\n  \"observaciones\": \"El destino cumple con los requisitos para su publicación.\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
+        "name": "Aprobar Solicitud",
+        "sortPriority": 3000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/1/resolver",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_L4zct62QXa",
+        "createdAt": "2026-10-30T23:15:50.957045045",
+        "updatedAt": "2026-10-30T23:22:52.576668383",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_Kt2AJNjDqY",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {},
+        "bodyType": null,
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "GET",
+        "name": "xDestino",
+        "sortPriority": 4000.0,
+        "url": "http://localhost:8080/api/solicitudes-operacion/destino/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
         "id": "rq_8pVWMUGwdA",
         "createdAt": "2026-10-30T23:07:32.480389544",
         "updatedAt": "2026-10-30T23:08:27.558756073",
@@ -894,7 +4224,7 @@
         "model": "http_request",
         "id": "rq_JJnKwn29UF",
         "createdAt": "2026-10-30T22:44:07.918958018",
-        "updatedAt": "2026-10-30T22:45:15.817193510",
+        "updatedAt": "2026-10-30T23:54:07.482549078",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -937,7 +4267,7 @@
         "model": "http_request",
         "id": "rq_stsVzgPFzQ",
         "createdAt": "2026-10-30T22:44:07.918893358",
-        "updatedAt": "2026-10-30T22:47:56.990343820",
+        "updatedAt": "2026-10-30T23:54:07.482322509",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -995,7 +4325,7 @@
         "model": "http_request",
         "id": "rq_hcrhZ8ojUr",
         "createdAt": "2026-10-30T22:44:07.918825799",
-        "updatedAt": "2026-10-30T22:47:12.304837337",
+        "updatedAt": "2026-10-30T23:54:07.482086540",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -1053,7 +4383,7 @@
         "model": "http_request",
         "id": "rq_4NnNwd2P5o",
         "createdAt": "2026-10-30T22:44:07.918758789",
-        "updatedAt": "2026-10-30T22:48:44.023676013",
+        "updatedAt": "2026-10-30T23:54:07.481901011",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -1103,7 +4433,7 @@
         "model": "http_request",
         "id": "rq_azZZRyCE6s",
         "createdAt": "2026-10-30T22:44:07.918675499",
-        "updatedAt": "2026-10-30T22:44:48.299133427",
+        "updatedAt": "2026-10-30T23:54:07.481649603",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},

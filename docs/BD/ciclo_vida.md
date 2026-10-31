@@ -58,11 +58,11 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 | N.º | Entidad Java | Dependencia | Estado | Responsable |
 |---:|---|---|---|---|
-| 22 | `SolicitudRegistro` | `Visitante`, `EstadoRegistro` | En proceso | Cristofer |
-| 23 | `ErrorValidacion` | `SolicitudRegistro`, `CampoFormulario` | En proceso | Cristofer |
-| 24 | `ConfirmacionRegistro` | `SolicitudRegistro` | En proceso | Cristofer |
-| 25 | `IncidenteTecnico` | `SolicitudRegistro` | En proceso | Cristofer |
-| 26 | `BitacoraProceso` | `SolicitudRegistro`, `RolProceso`, `EstadoRegistro` | En proceso | Cristofer |
+| 22 | `SolicitudRegistro` | `Visitante`, `EstadoRegistro` | **Completado** | Cristofer |
+| 23 | `ErrorValidacion` | `SolicitudRegistro`, `CampoFormulario` | **Completado** | Cristofer |
+| 24 | `ConfirmacionRegistro` | `SolicitudRegistro` | **Completado** | Cristofer |
+| 25 | `IncidenteTecnico` | `SolicitudRegistro` | **Completado** | Cristofer |
+| 26 | `BitacoraProceso` | `SolicitudRegistro`, `RolProceso`, `EstadoRegistro` | **Completado** | Cristofer |
 
 > **Nota:** Las dependencias de esta tabla siguen el plan de trabajo descrito. Antes de implementar las relaciones JPA, verifica que coincidan con las claves foráneas definidas en el archivo SQL.
 
@@ -70,7 +70,7 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 Utiliza los siguientes estados para mantener un seguimiento uniforme del trabajo:
 
-- **En proceso:** la tarea todavía no ha comenzado.
+- ****Completado**:** la tarea todavía no ha comenzado.
 - **En progreso:** la entidad se encuentra en desarrollo.
 - **En revisión:** la implementación está pendiente de validación o pruebas.
 - **Completado:** la entidad está implementada y probada.
@@ -103,6 +103,6 @@ El orden de construcción no obliga a completar todos los DAO de una fase antes 
 
 ## 5. Asignación de responsables
 
-Por ahora, `Rol` figura como completado y asignado a Cristofer. Las demás entidades quedan como **En proceso** y con responsable **Cristofer**, ya que no se han indicado otros integrantes ni sus asignaciones.
+Por ahora, `Rol` figura como completado y asignado a Cristofer. Las demás entidades quedan como ****Completado**** y con responsable **Cristofer**, ya que no se han indicado otros integrantes ni sus asignaciones.
 
 Cuando el equipo distribuya las tareas, actualiza las columnas **Estado** y **Responsable** de las tablas correspondientes.
