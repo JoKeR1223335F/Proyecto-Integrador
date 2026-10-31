@@ -1,7 +1,7 @@
 {
   "yaakVersion": "2026.9.0",
   "yaakSchema": 4,
-  "timestamp": "2026-10-31T01:47:34.926297677",
+  "timestamp": "2026-10-31T14:37:21.745781686",
   "resources": {
     "workspaces": [
       {
@@ -29,17 +29,353 @@
     "folders": [
       {
         "model": "folder",
-        "id": "fl_FvSGnQevFS",
-        "createdAt": "2026-10-31T01:43:08.947330750",
-        "updatedAt": "2026-10-31T01:43:15.884246818",
+        "id": "fl_dSst3AkRMM",
+        "createdAt": "2026-10-31T14:35:06.556275424",
+        "updatedAt": "2026-10-31T14:35:44.339185292",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_RynaRz94zz",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
+        "name": "Fase 6",
+        "sortPriority": 5000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_C4VzZM5dbU",
+        "createdAt": "2026-10-31T14:34:40.575506688",
+        "updatedAt": "2026-10-31T14:35:44.339006633",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Fase 5",
+        "sortPriority": 4000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_HAcWSAHaTG",
+        "createdAt": "2026-10-31T14:34:15.549971672",
+        "updatedAt": "2026-10-31T14:35:44.338879883",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Fase 4",
+        "sortPriority": 3000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_XmDwiT2fxz",
+        "createdAt": "2026-10-31T14:33:54.939467661",
+        "updatedAt": "2026-10-31T14:35:44.338748954",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Fase 3",
+        "sortPriority": 2000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_PQGm2iYBDb",
+        "createdAt": "2026-10-31T14:33:24.217880985",
+        "updatedAt": "2026-10-31T14:35:44.338581174",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Fase 2",
+        "sortPriority": 1000.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_p5VQpgtBQh",
+        "createdAt": "2026-10-31T14:31:52.020365434",
+        "updatedAt": "2026-10-31T14:35:44.338328925",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_RynaRz94zz",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "Fase 1",
+        "sortPriority": 0.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_ptyDXvVfTx",
+        "createdAt": "2026-10-31T14:26:02.059726038",
+        "updatedAt": "2026-10-31T14:26:02.059726538",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ozRb2BuXwm",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "inserts",
+        "sortPriority": -1793456762059.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_u4qgne5bEe",
+        "createdAt": "2026-10-31T14:23:40.278161909",
+        "updatedAt": "2026-10-31T14:24:28.221593600",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qYQNEH7wR3",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
+        "name": "inserts",
+        "sortPriority": 0.0,
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingRequestMessageSize": {
+          "enabled": false,
+          "value": 67108864
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "folder",
+        "id": "fl_FvSGnQevFS",
+        "createdAt": "2026-10-31T01:43:08.947330750",
+        "updatedAt": "2026-10-31T14:35:09.595068751",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_dSst3AkRMM",
+        "authentication": {},
+        "authenticationType": null,
+        "description": "",
+        "headers": [],
         "name": "BitacoraProceso",
-        "sortPriority": 8000.007000000001,
+        "sortPriority": 4000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -73,15 +409,15 @@
         "model": "folder",
         "id": "fl_ZA8ykaaG6V",
         "createdAt": "2026-10-31T01:38:19.511000924",
-        "updatedAt": "2026-10-31T01:38:28.791904842",
+        "updatedAt": "2026-10-31T14:35:09.594922921",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_dSst3AkRMM",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "IncidenteTecnico",
-        "sortPriority": 8000.006000000001,
+        "sortPriority": 3000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -115,15 +451,15 @@
         "model": "folder",
         "id": "fl_NCTaT6kRZS",
         "createdAt": "2026-10-31T01:24:26.928029738",
-        "updatedAt": "2026-10-31T01:24:34.793355564",
+        "updatedAt": "2026-10-31T14:35:09.594769792",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_dSst3AkRMM",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "ConfirmacionRegistro",
-        "sortPriority": 8000.005000000001,
+        "sortPriority": 2000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -157,15 +493,15 @@
         "model": "folder",
         "id": "fl_Hgrk7wiuNt",
         "createdAt": "2026-10-31T00:58:57.927220792",
-        "updatedAt": "2026-10-31T00:59:15.225946819",
+        "updatedAt": "2026-10-31T14:35:09.594627222",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_dSst3AkRMM",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Error-Validacion",
-        "sortPriority": 8000.004000000001,
+        "sortPriority": 1000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -199,15 +535,15 @@
         "model": "folder",
         "id": "fl_VKcsdBLJeg",
         "createdAt": "2026-10-31T00:49:04.257409065",
-        "updatedAt": "2026-10-31T00:49:17.856787298",
+        "updatedAt": "2026-10-31T14:35:09.594348443",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_dSst3AkRMM",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "SolicitudRegistro",
-        "sortPriority": 8000.003000000001,
+        "sortPriority": 0.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -241,15 +577,15 @@
         "model": "folder",
         "id": "fl_z9FyHrkw3J",
         "createdAt": "2026-10-31T00:30:15.790744564",
-        "updatedAt": "2026-10-31T00:30:24.906638886",
+        "updatedAt": "2026-10-31T14:34:57.115481185",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_C4VzZM5dbU",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Notificacion",
-        "sortPriority": 8000.003000000001,
+        "sortPriority": 0.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -283,15 +619,15 @@
         "model": "folder",
         "id": "fl_yZ5Sn9cgqs",
         "createdAt": "2026-10-31T00:24:09.171410340",
-        "updatedAt": "2026-10-31T00:24:15.456164213",
+        "updatedAt": "2026-10-31T14:34:57.115778484",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_C4VzZM5dbU",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Moderacion",
-        "sortPriority": 8000.002,
+        "sortPriority": 1000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -325,15 +661,15 @@
         "model": "folder",
         "id": "fl_b5pkPsqiu9",
         "createdAt": "2026-10-31T00:06:16.590239199",
-        "updatedAt": "2026-10-31T00:06:23.196323163",
+        "updatedAt": "2026-10-31T14:34:57.115940704",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_C4VzZM5dbU",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "ReporteComentario",
-        "sortPriority": 8000.002,
+        "sortPriority": 2000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -367,15 +703,15 @@
         "model": "folder",
         "id": "fl_qH23BFiKcY",
         "createdAt": "2026-10-30T23:54:13.145228673",
-        "updatedAt": "2026-10-30T23:54:17.817767872",
+        "updatedAt": "2026-10-31T14:34:57.116088983",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_C4VzZM5dbU",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Comentario",
-        "sortPriority": 8000.002,
+        "sortPriority": 3000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -409,15 +745,15 @@
         "model": "folder",
         "id": "fl_myUySaUUUR",
         "createdAt": "2026-10-30T23:43:07.238511083",
-        "updatedAt": "2026-10-30T23:43:12.271059761",
+        "updatedAt": "2026-10-31T14:34:57.116241633",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_C4VzZM5dbU",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Publicacion",
-        "sortPriority": 8000.001,
+        "sortPriority": 4000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -451,15 +787,15 @@
         "model": "folder",
         "id": "fl_Kt2AJNjDqY",
         "createdAt": "2026-10-30T23:15:50.956706517",
-        "updatedAt": "2026-10-30T23:16:00.637638284",
+        "updatedAt": "2026-10-31T14:34:34.474439444",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_HAcWSAHaTG",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "SolicitudOperacion",
-        "sortPriority": 8000.002,
+        "sortPriority": 0.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -493,15 +829,15 @@
         "model": "folder",
         "id": "fl_ozRb2BuXwm",
         "createdAt": "2026-10-30T23:07:32.479647117",
-        "updatedAt": "2026-10-30T23:07:38.328154917",
+        "updatedAt": "2026-10-31T14:34:34.474814573",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_HAcWSAHaTG",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "DestinoImagen",
-        "sortPriority": 8000.002,
+        "sortPriority": 2000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -535,15 +871,15 @@
         "model": "folder",
         "id": "fl_qYQNEH7wR3",
         "createdAt": "2026-10-30T22:44:07.918468450",
-        "updatedAt": "2026-10-30T22:44:12.864466462",
+        "updatedAt": "2026-10-31T14:34:34.474663973",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_HAcWSAHaTG",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Destino",
-        "sortPriority": 8000.001,
+        "sortPriority": 1000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -577,15 +913,15 @@
         "model": "folder",
         "id": "fl_rP3V8fgprR",
         "createdAt": "2026-10-30T18:10:16.144812617",
-        "updatedAt": "2026-10-30T22:43:53.389540466",
+        "updatedAt": "2026-10-31T14:35:38.122107834",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_XmDwiT2fxz",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "PreferenciaVisitante",
-        "sortPriority": 11000.0,
+        "sortPriority": 1000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -619,15 +955,15 @@
         "model": "folder",
         "id": "fl_RW8eC9AuEU",
         "createdAt": "2026-10-30T17:57:38.025041181",
-        "updatedAt": "2026-10-30T22:43:53.389153997",
+        "updatedAt": "2026-10-31T14:35:38.122270634",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_XmDwiT2fxz",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Visitante",
-        "sortPriority": 9000.0,
+        "sortPriority": 2000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -661,15 +997,15 @@
         "model": "folder",
         "id": "fl_tjgnAiBGoH",
         "createdAt": "2026-10-30T15:32:00.025898",
-        "updatedAt": "2026-10-30T22:43:53.387649242",
+        "updatedAt": "2026-10-31T14:32:33.556265288",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "estados-registro",
-        "sortPriority": 0.0,
+        "sortPriority": 5000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -703,15 +1039,15 @@
         "model": "folder",
         "id": "fl_B5RXfbg5xi",
         "createdAt": "2026-10-30T15:32:00.025898",
-        "updatedAt": "2026-10-30T22:43:53.387919051",
+        "updatedAt": "2026-10-31T14:32:33.556140549",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "estados-moderacion",
-        "sortPriority": 1000.0,
+        "sortPriority": 4000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -745,15 +1081,15 @@
         "model": "folder",
         "id": "fl_TCjXiz4fcc",
         "createdAt": "2026-10-30T15:32:00.025898",
-        "updatedAt": "2026-10-30T22:43:53.388105251",
+        "updatedAt": "2026-10-31T14:32:33.555982620",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "motivos-rechazo",
-        "sortPriority": 2000.0,
+        "sortPriority": 3000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -787,15 +1123,15 @@
         "model": "folder",
         "id": "fl_ayb9k86U4s",
         "createdAt": "2026-10-30T15:32:00.025898",
-        "updatedAt": "2026-10-30T22:43:53.389313967",
+        "updatedAt": "2026-10-31T14:32:33.555819991",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "categorias-destino",
-        "sortPriority": 3000.0,
+        "sortPriority": 2000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -829,15 +1165,15 @@
         "model": "folder",
         "id": "fl_9taqcbqh9m",
         "createdAt": "2026-10-30T15:07:46.194845226",
-        "updatedAt": "2026-10-30T22:43:53.388273420",
+        "updatedAt": "2026-10-31T14:33:47.938972699",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_PQGm2iYBDb",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "ReglaValidacion",
-        "sortPriority": 10000.0,
+        "sortPriority": 0.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -871,15 +1207,15 @@
         "model": "folder",
         "id": "fl_QwRVZoMpCC",
         "createdAt": "2026-10-30T14:55:18.383171854",
-        "updatedAt": "2026-10-30T22:43:53.389020328",
+        "updatedAt": "2026-10-31T14:33:47.939220408",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_PQGm2iYBDb",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Usuario",
-        "sortPriority": 8000.0,
+        "sortPriority": 1000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -913,15 +1249,15 @@
         "model": "folder",
         "id": "fl_FkNr3QzSYz",
         "createdAt": "2026-10-30T14:48:56.464357020",
-        "updatedAt": "2026-10-30T22:43:53.388894078",
+        "updatedAt": "2026-10-31T14:33:47.939365617",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_PQGm2iYBDb",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Administrador",
-        "sortPriority": 7000.0,
+        "sortPriority": 2000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -955,15 +1291,15 @@
         "model": "folder",
         "id": "fl_EFjiJp9Nvn",
         "createdAt": "2026-10-30T14:36:19.260392985",
-        "updatedAt": "2026-10-30T22:43:53.388768669",
+        "updatedAt": "2026-10-31T14:32:33.555369003",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Campo-Formulario",
-        "sortPriority": 6000.0,
+        "sortPriority": 0.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -997,15 +1333,15 @@
         "model": "folder",
         "id": "fl_UK6Z8oCfyC",
         "createdAt": "2026-10-30T07:52:08.239158509",
-        "updatedAt": "2026-10-30T22:43:53.388597939",
+        "updatedAt": "2026-10-31T14:32:33.555656131",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "Tipo-turismo",
-        "sortPriority": 5000.0,
+        "sortPriority": 1000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -1039,15 +1375,15 @@
         "model": "folder",
         "id": "fl_ANQEuKhgiY",
         "createdAt": "2026-10-27T19:41:20.978297093",
-        "updatedAt": "2026-10-30T22:43:53.388434710",
+        "updatedAt": "2026-10-31T14:32:33.556401277",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "roles-proceso",
-        "sortPriority": 4000.0,
+        "sortPriority": 6000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -1081,15 +1417,15 @@
         "model": "folder",
         "id": "fl_G5ND7EmskK",
         "createdAt": "2026-10-27T18:34:26.722158318",
-        "updatedAt": "2026-10-30T22:43:53.389690096",
+        "updatedAt": "2026-10-31T14:32:33.556546247",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_RynaRz94zz",
+        "folderId": "fl_p5VQpgtBQh",
         "authentication": {},
         "authenticationType": null,
         "description": "",
         "headers": [],
         "name": "roles",
-        "sortPriority": 12000.0,
+        "sortPriority": 7000.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -1123,7 +1459,7 @@
         "model": "folder",
         "id": "fl_RynaRz94zz",
         "createdAt": "2026-10-27T18:31:40.483581857",
-        "updatedAt": "2026-10-27T18:31:40.483582097",
+        "updatedAt": "2026-10-31T14:35:31.817938408",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": null,
         "authentication": {},
@@ -1131,7 +1467,7 @@
         "description": "",
         "headers": [],
         "name": "Proyecto_Integrador",
-        "sortPriority": -1793125900482.0,
+        "sortPriority": 0.0,
         "settingSendCookies": {
           "enabled": false,
           "value": true
@@ -1163,6 +1499,435 @@
       }
     ],
     "httpRequests": [
+      {
+        "model": "http_request",
+        "id": "rq_He7Ahbogpf",
+        "createdAt": "2026-10-31T14:31:08.893548336",
+        "updatedAt": "2026-10-31T14:31:33.883785808",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ptyDXvVfTx",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "form": [
+            {
+              "enabled": true,
+              "file": "/home/joker/Downloads/centro-historico-de-cusco-iglesia-merced.webp",
+              "id": "6zkcVPuPYi",
+              "name": "archivo"
+            },
+            {
+              "enabled": true,
+              "id": "zH3UMa40wE",
+              "name": "idDestino",
+              "value": "4"
+            },
+            {
+              "enabled": true,
+              "id": "KVBKYK0dRY",
+              "name": "textoAlternativo",
+              "value": ""
+            },
+            {
+              "enabled": true,
+              "id": "zngHWu0C7D",
+              "name": "esPrincipal",
+              "value": "true"
+            },
+            {
+              "enabled": true,
+              "id": "mTjCYD32gc",
+              "name": "orden",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "id": "937Zk2fqTE",
+              "name": "",
+              "value": ""
+            }
+          ]
+        },
+        "bodyType": "multipart/form-data",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "multipart/form-data",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 0.001,
+        "url": "http://localhost:8080/api/destino-imagenes/subir",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_JFTbf27yvs",
+        "createdAt": "2026-10-31T14:30:53.764376439",
+        "updatedAt": "2026-10-31T14:30:53.764376799",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ptyDXvVfTx",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "form": [
+            {
+              "enabled": true,
+              "file": "/home/joker/Downloads/laguna-huachina-ica.webp",
+              "id": "6zkcVPuPYi",
+              "name": "archivo"
+            },
+            {
+              "enabled": true,
+              "id": "zH3UMa40wE",
+              "name": "idDestino",
+              "value": "5"
+            },
+            {
+              "enabled": true,
+              "id": "KVBKYK0dRY",
+              "name": "textoAlternativo",
+              "value": ""
+            },
+            {
+              "enabled": true,
+              "id": "zngHWu0C7D",
+              "name": "esPrincipal",
+              "value": "true"
+            },
+            {
+              "enabled": true,
+              "id": "mTjCYD32gc",
+              "name": "orden",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "id": "rskbxzNRIk",
+              "name": "",
+              "value": ""
+            }
+          ]
+        },
+        "bodyType": "multipart/form-data",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "multipart/form-data",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 0.001,
+        "url": "http://localhost:8080/api/destino-imagenes/subir",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_JZpcNFgAPn",
+        "createdAt": "2026-10-31T14:26:07.959806299",
+        "updatedAt": "2026-10-31T14:30:58.095761110",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_ptyDXvVfTx",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "form": [
+            {
+              "enabled": true,
+              "file": "/home/joker/Downloads/laguna-huachina-ica.webp",
+              "id": "6zkcVPuPYi",
+              "name": "archivo"
+            },
+            {
+              "enabled": true,
+              "id": "zH3UMa40wE",
+              "name": "idDestino",
+              "value": "3"
+            },
+            {
+              "enabled": true,
+              "id": "KVBKYK0dRY",
+              "name": "textoAlternativo",
+              "value": ""
+            },
+            {
+              "enabled": true,
+              "id": "zngHWu0C7D",
+              "name": "esPrincipal",
+              "value": "true"
+            },
+            {
+              "enabled": true,
+              "id": "mTjCYD32gc",
+              "name": "orden",
+              "value": "1"
+            },
+            {
+              "enabled": true,
+              "id": "meYbZeSipd",
+              "name": "",
+              "value": ""
+            }
+          ]
+        },
+        "bodyType": "multipart/form-data",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "multipart/form-data",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 0.0,
+        "url": "http://localhost:8080/api/destino-imagenes/subir",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_9k2en9ns9t",
+        "createdAt": "2026-10-31T14:24:46.884687150",
+        "updatedAt": "2026-10-31T14:30:04.575698779",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qYQNEH7wR3",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"categoriaDestino\": {\n    \"codigo\": \"arqueologico\",\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Laguna de Huacachina\",\n  \"descripcion\": \"Hermosa laguna rodeada de dunas en el desierto de Ica.\",\n  \"ubicacion\": \"Huacachina, Ica\",\n  \"distrito\": \"Ica\",\n  \"provincia\": \"Ica\",\n  \"departamento\": \"Ica\",\n  \"latitud\": -14.0875000,\n  \"longitud\": -75.7633000,\n  \"estado\": \"BORRADOR\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 3000.001,
+        "url": "http://localhost:8080/api/destinos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_xsyWRxLnYn",
+        "createdAt": "2026-10-31T14:24:02.461478489",
+        "updatedAt": "2026-10-31T14:24:13.991815792",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_u4qgne5bEe",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"categoriaDestino\": {\n    \"codigo\": \"cultural\"\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Centro Histórico de Cusco\",\n  \"descripcion\": \"Espacio histórico que conserva la arquitectura inca y colonial, con calles empedradas, templos y plazas emblemáticas.\",\n  \"ubicacion\": \"Centro Histórico, Cusco\",\n  \"distrito\": \"Cusco\",\n  \"provincia\": \"Cusco\",\n  \"departamento\": \"Cusco\",\n  \"latitud\": -13.5167000,\n  \"longitud\": -71.9781000,\n  \"estado\": \"BORRADOR\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 2000.0,
+        "url": "http://localhost:8080/api/destinos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_GYC3xe7HqD",
+        "createdAt": "2026-10-31T14:23:55.421620349",
+        "updatedAt": "2026-10-31T14:24:13.991642473",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_u4qgne5bEe",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"categoriaDestino\": {\n    \"codigo\": \"natural\"\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Laguna de Huacachina\",\n  \"descripcion\": \"Hermosa laguna rodeada de dunas en el desierto de Ica, ideal para paseos en bote y aventuras en tubulares.\",\n  \"ubicacion\": \"Huacachina, Ica\",\n  \"distrito\": \"Ica\",\n  \"provincia\": \"Ica\",\n  \"departamento\": \"Ica\",\n  \"latitud\": -14.0875000,\n  \"longitud\": -75.7633000,\n  \"estado\": \"BORRADOR\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "POST",
+        "name": "",
+        "sortPriority": 1000.0,
+        "url": "http://localhost:8080/api/destinos",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
       {
         "model": "http_request",
         "id": "rq_BW5QKKqvRs",
@@ -2099,7 +2864,7 @@
         "model": "http_request",
         "id": "rq_zoDouhHPXF",
         "createdAt": "2026-10-31T00:49:04.257946582",
-        "updatedAt": "2026-10-31T00:50:19.079824585",
+        "updatedAt": "2026-10-31T14:34:31.867556375",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_VKcsdBLJeg",
         "authentication": {},
@@ -2142,7 +2907,7 @@
         "model": "http_request",
         "id": "rq_b9YxKhQJER",
         "createdAt": "2026-10-31T00:49:04.257882283",
-        "updatedAt": "2026-10-31T00:55:03.873250468",
+        "updatedAt": "2026-10-31T14:34:31.867392116",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_VKcsdBLJeg",
         "authentication": {},
@@ -2194,7 +2959,7 @@
         "model": "http_request",
         "id": "rq_mpxtEVc6sC",
         "createdAt": "2026-10-31T00:49:04.257815823",
-        "updatedAt": "2026-10-31T00:54:21.565731104",
+        "updatedAt": "2026-10-31T14:34:31.867215086",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_VKcsdBLJeg",
         "authentication": {},
@@ -2246,7 +3011,7 @@
         "model": "http_request",
         "id": "rq_UWR7RbXXDd",
         "createdAt": "2026-10-31T00:49:04.257743563",
-        "updatedAt": "2026-10-31T00:49:50.344344192",
+        "updatedAt": "2026-10-31T14:34:31.867035227",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_VKcsdBLJeg",
         "authentication": {},
@@ -2289,7 +3054,7 @@
         "model": "http_request",
         "id": "rq_m5qB89NxEs",
         "createdAt": "2026-10-31T00:49:04.257649504",
-        "updatedAt": "2026-10-31T00:49:35.321701860",
+        "updatedAt": "2026-10-31T14:34:31.866756018",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_VKcsdBLJeg",
         "authentication": {},
@@ -4035,7 +4800,7 @@
         "model": "http_request",
         "id": "rq_8pVWMUGwdA",
         "createdAt": "2026-10-30T23:07:32.480389544",
-        "updatedAt": "2026-10-30T23:08:27.558756073",
+        "updatedAt": "2026-10-31T14:05:41.944814068",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_ozRb2BuXwm",
         "authentication": {},
@@ -4054,7 +4819,7 @@
         "method": "GET",
         "name": "",
         "sortPriority": 0.0,
-        "url": "http://localhost:8080/api/destino-imagenes/destino/1",
+        "url": "http://localhost:8080/api/destino-imagenes/destino/2",
         "urlParameters": [],
         "settingSendCookies": {
           "enabled": false,
@@ -4224,7 +4989,7 @@
         "model": "http_request",
         "id": "rq_JJnKwn29UF",
         "createdAt": "2026-10-30T22:44:07.918958018",
-        "updatedAt": "2026-10-30T23:54:07.482549078",
+        "updatedAt": "2026-10-31T14:29:25.766985864",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -4234,6 +4999,64 @@
         "description": "",
         "headers": [],
         "method": "DELETE",
+        "name": "",
+        "sortPriority": 5000.0,
+        "url": "http://localhost:8080/api/destinos/2",
+        "urlParameters": [],
+        "settingSendCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingStoreCookies": {
+          "enabled": false,
+          "value": true
+        },
+        "settingValidateCertificates": {
+          "enabled": false,
+          "value": true
+        },
+        "settingFollowRedirects": {
+          "enabled": false,
+          "value": true
+        },
+        "settingRequestTimeout": {
+          "enabled": false,
+          "value": 0
+        },
+        "settingHttpVersion": {
+          "enabled": false,
+          "value": "auto"
+        }
+      },
+      {
+        "model": "http_request",
+        "id": "rq_stsVzgPFzQ",
+        "createdAt": "2026-10-30T22:44:07.918893358",
+        "updatedAt": "2026-10-31T14:24:28.222500485",
+        "workspaceId": "wk_yiws5hPwPV",
+        "folderId": "fl_qYQNEH7wR3",
+        "authentication": {},
+        "authenticationType": null,
+        "body": {
+          "text": "{\n  \"idDestino\": 1,\n  \"categoriaDestino\": {\n    \"codigo\": \"natural\",\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Laguna de Huacachina Actualizada\",\n  \"descripcion\": \"Destino turístico emblemático de la región Ica.\",\n  \"ubicacion\": \"Huacachina, Ica, Perú\",\n  \"distrito\": \"Ica\",\n  \"provincia\": \"Ica\",\n  \"departamento\": \"Ica\",\n  \"latitud\": -14.0875000,\n  \"longitud\": -75.7633000,\n  \"estado\": \"PUBLICADO\"\n}"
+        },
+        "bodyType": "application/json",
+        "description": "",
+        "headers": [
+          {
+            "enabled": true,
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": null
+          },
+          {
+            "enabled": true,
+            "name": "Accept",
+            "value": "application/json",
+            "id": null
+          }
+        ],
+        "method": "PUT",
         "name": "",
         "sortPriority": 4000.0,
         "url": "http://localhost:8080/api/destinos/1",
@@ -4265,73 +5088,15 @@
       },
       {
         "model": "http_request",
-        "id": "rq_stsVzgPFzQ",
-        "createdAt": "2026-10-30T22:44:07.918893358",
-        "updatedAt": "2026-10-30T23:54:07.482322509",
-        "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_qYQNEH7wR3",
-        "authentication": {},
-        "authenticationType": null,
-        "body": {
-          "text": "{\n  \"idDestino\": 1,\n  \"categoriaDestino\": {\n    \"codigo\": \"natural\",\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Laguna de Huacachina Actualizada\",\n  \"descripcion\": \"Destino turístico emblemático de la región Ica.\",\n  \"ubicacion\": \"Huacachina, Ica, Perú\",\n  \"distrito\": \"Ica\",\n  \"provincia\": \"Ica\",\n  \"departamento\": \"Ica\",\n  \"latitud\": -14.0875000,\n  \"longitud\": -75.7633000,\n  \"estado\": \"PUBLICADO\"\n}"
-        },
-        "bodyType": "application/json",
-        "description": "",
-        "headers": [
-          {
-            "enabled": true,
-            "name": "Content-Type",
-            "value": "application/json",
-            "id": null
-          },
-          {
-            "enabled": true,
-            "name": "Accept",
-            "value": "application/json",
-            "id": null
-          }
-        ],
-        "method": "PUT",
-        "name": "",
-        "sortPriority": 3000.0,
-        "url": "http://localhost:8080/api/destinos/1",
-        "urlParameters": [],
-        "settingSendCookies": {
-          "enabled": false,
-          "value": true
-        },
-        "settingStoreCookies": {
-          "enabled": false,
-          "value": true
-        },
-        "settingValidateCertificates": {
-          "enabled": false,
-          "value": true
-        },
-        "settingFollowRedirects": {
-          "enabled": false,
-          "value": true
-        },
-        "settingRequestTimeout": {
-          "enabled": false,
-          "value": 0
-        },
-        "settingHttpVersion": {
-          "enabled": false,
-          "value": "auto"
-        }
-      },
-      {
-        "model": "http_request",
         "id": "rq_hcrhZ8ojUr",
         "createdAt": "2026-10-30T22:44:07.918825799",
-        "updatedAt": "2026-10-30T23:54:07.482086540",
+        "updatedAt": "2026-10-31T14:24:49.687411720",
         "workspaceId": "wk_yiws5hPwPV",
-        "folderId": "fl_qYQNEH7wR3",
+        "folderId": "fl_u4qgne5bEe",
         "authentication": {},
         "authenticationType": null,
         "body": {
-          "text": "{\n  \"categoriaDestino\": {\n    \"codigo\": \"arqueologico\",\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Laguna de Huacachina\",\n  \"descripcion\": \"Hermosa laguna rodeada de dunas en el desierto de Ica.\",\n  \"ubicacion\": \"Huacachina, Ica\",\n  \"distrito\": \"Ica\",\n  \"provincia\": \"Ica\",\n  \"departamento\": \"Ica\",\n  \"latitud\": -14.0875000,\n  \"longitud\": -75.7633000,\n  \"estado\": \"BORRADOR\"\n}"
+          "text": "{\n  \"categoriaDestino\": {\n    \"codigo\": \"natural\",\n  },\n  \"visitante\": {\n    \"idVisitante\": 3\n  },\n  \"nombre\": \"Laguna de Huacachina\",\n  \"descripcion\": \"Hermosa laguna rodeada de dunas en el desierto de Ica.\",\n  \"ubicacion\": \"Huacachina, Ica\",\n  \"distrito\": \"Ica\",\n  \"provincia\": \"Ica\",\n  \"departamento\": \"Ica\",\n  \"latitud\": -14.0875000,\n  \"longitud\": -75.7633000,\n  \"estado\": \"BORRADOR\"\n}"
         },
         "bodyType": "application/json",
         "description": "",
@@ -4351,7 +5116,7 @@
         ],
         "method": "POST",
         "name": "",
-        "sortPriority": 2000.0,
+        "sortPriority": 333.3333333333333,
         "url": "http://localhost:8080/api/destinos",
         "urlParameters": [],
         "settingSendCookies": {
@@ -4383,7 +5148,7 @@
         "model": "http_request",
         "id": "rq_4NnNwd2P5o",
         "createdAt": "2026-10-30T22:44:07.918758789",
-        "updatedAt": "2026-10-30T23:54:07.481901011",
+        "updatedAt": "2026-10-31T14:24:28.222143027",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -4401,7 +5166,7 @@
         ],
         "method": "GET",
         "name": "",
-        "sortPriority": 1000.0,
+        "sortPriority": 2000.0,
         "url": "http://localhost:8080/api/destinos/2",
         "urlParameters": [],
         "settingSendCookies": {
@@ -4433,7 +5198,7 @@
         "model": "http_request",
         "id": "rq_azZZRyCE6s",
         "createdAt": "2026-10-30T22:44:07.918675499",
-        "updatedAt": "2026-10-30T23:54:07.481649603",
+        "updatedAt": "2026-10-31T14:24:28.221858769",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_qYQNEH7wR3",
         "authentication": {},
@@ -4451,7 +5216,7 @@
         ],
         "method": "GET",
         "name": "",
-        "sortPriority": 0.0,
+        "sortPriority": 1000.0,
         "url": "http://localhost:8080/api/destinos",
         "urlParameters": [],
         "settingSendCookies": {
@@ -6512,7 +7277,7 @@
         "model": "http_request",
         "id": "rq_rMnLdrroKi",
         "createdAt": "2026-10-30T14:55:18.383403963",
-        "updatedAt": "2026-10-30T14:56:16.012905498",
+        "updatedAt": "2026-10-31T04:52:50.912661623",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_QwRVZoMpCC",
         "authentication": {},
@@ -6524,7 +7289,7 @@
         "method": "DELETE",
         "name": "",
         "sortPriority": 4000.0,
-        "url": "http://localhost:8080/api/usuarios/1",
+        "url": "http://localhost:8080/api/usuarios/2",
         "urlParameters": [],
         "settingSendCookies": {
           "enabled": false,
@@ -6555,7 +7320,7 @@
         "model": "http_request",
         "id": "rq_AaX8JgNx9q",
         "createdAt": "2026-10-30T14:48:56.464861687",
-        "updatedAt": "2026-10-30T14:49:58.559320407",
+        "updatedAt": "2026-10-31T14:33:40.587929791",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_FkNr3QzSYz",
         "authentication": {},
@@ -6566,7 +7331,7 @@
         "headers": [],
         "method": "DELETE",
         "name": "",
-        "sortPriority": 4000.0,
+        "sortPriority": 5000.0,
         "url": "http://localhost:8080/api/administradores/1",
         "urlParameters": [],
         "settingSendCookies": {
@@ -6598,7 +7363,7 @@
         "model": "http_request",
         "id": "rq_2UtQuwWZoH",
         "createdAt": "2026-10-30T14:48:56.464795257",
-        "updatedAt": "2026-10-30T14:51:32.036545952",
+        "updatedAt": "2026-10-31T14:33:40.587767792",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_FkNr3QzSYz",
         "authentication": {},
@@ -6624,7 +7389,7 @@
         ],
         "method": "PUT",
         "name": "",
-        "sortPriority": 3000.0,
+        "sortPriority": 4000.0,
         "url": "http://localhost:8080/api/administradores/1",
         "urlParameters": [],
         "settingSendCookies": {
@@ -6656,7 +7421,7 @@
         "model": "http_request",
         "id": "rq_WEaC8UTN69",
         "createdAt": "2026-10-30T14:48:56.464730768",
-        "updatedAt": "2026-10-30T14:50:50.019288474",
+        "updatedAt": "2026-10-31T14:33:40.587596333",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_FkNr3QzSYz",
         "authentication": {},
@@ -6682,7 +7447,7 @@
         ],
         "method": "POST",
         "name": "",
-        "sortPriority": 2000.0,
+        "sortPriority": 3000.0,
         "url": "http://localhost:8080/api/administradores",
         "urlParameters": [],
         "settingSendCookies": {
@@ -6714,7 +7479,7 @@
         "model": "http_request",
         "id": "rq_NGkJYyqSJz",
         "createdAt": "2026-10-30T14:48:56.464661078",
-        "updatedAt": "2026-10-30T14:49:27.983433339",
+        "updatedAt": "2026-10-31T14:33:40.587438384",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_FkNr3QzSYz",
         "authentication": {},
@@ -6732,7 +7497,7 @@
         ],
         "method": "GET",
         "name": "",
-        "sortPriority": 1000.0,
+        "sortPriority": 2000.0,
         "url": "http://localhost:8080/api/administradores/1",
         "urlParameters": [],
         "settingSendCookies": {
@@ -6764,7 +7529,7 @@
         "model": "http_request",
         "id": "rq_CRfgnakocY",
         "createdAt": "2026-10-30T14:48:56.464573828",
-        "updatedAt": "2026-10-30T14:49:14.416129802",
+        "updatedAt": "2026-10-31T14:33:40.587259395",
         "workspaceId": "wk_yiws5hPwPV",
         "folderId": "fl_FkNr3QzSYz",
         "authentication": {},
@@ -6782,7 +7547,7 @@
         ],
         "method": "GET",
         "name": "",
-        "sortPriority": 0.0,
+        "sortPriority": 1000.0,
         "url": "http://localhost:8080/api/administradores",
         "urlParameters": [],
         "settingSendCookies": {

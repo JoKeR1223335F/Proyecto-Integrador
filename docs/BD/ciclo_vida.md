@@ -70,7 +70,7 @@ Estas tablas no tienen claves foráneas hacia otras tablas.
 
 Utiliza los siguientes estados para mantener un seguimiento uniforme del trabajo:
 
-- ****Completado**:** la tarea todavía no ha comenzado.
+- **Pendiente:** la tarea todavía no ha comenzado.
 - **En progreso:** la entidad se encuentra en desarrollo.
 - **En revisión:** la implementación está pendiente de validación o pruebas.
 - **Completado:** la entidad está implementada y probada.
