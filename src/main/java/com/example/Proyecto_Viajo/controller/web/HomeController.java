@@ -13,7 +13,7 @@ public class HomeController {
 
   @GetMapping("/nosotros")
   public String nosotros() {
-    return "/features/about/about";
+    return "features/about/about";
   }
 
 }

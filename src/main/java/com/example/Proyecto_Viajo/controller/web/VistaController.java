@@ -8,11 +8,11 @@ public class VistaController {
 
   @GetMapping("/destinos")
   public String destinos() {
-    return "/features/destino/destinos";
+    return "features/destino/destinos";
   }
 
   @GetMapping("/publicaciones")
   public String publicaciones() {
-    return "/features/publicacion/publicaciones";
+    return "features/publicacion/publicaciones";
   }
 }

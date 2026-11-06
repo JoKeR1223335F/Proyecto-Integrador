@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+# Docker
+docker/.env
+
+# Compilación
+target/
+
+# IDE
+.idea/
+.vscode/

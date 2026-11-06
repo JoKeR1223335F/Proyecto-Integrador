@@ -11,12 +11,12 @@ public class AutenticacionController {
 
   @GetMapping("/login")
   public String login() {
-    return "/features/auth/login";
+    return "features/auth/login";
   }
 
   @GetMapping("/registro")
   public String registro() {
-    return "/features/auth/registro";
+    return "features/auth/registro";
   }
 
 }
